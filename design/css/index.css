@@ -1,0 +1,960 @@
+/* 孩子的眼睛，需要我們共同守護 */
+.index_banner {
+  width:100%;
+  position: relative;
+  padding-top: 84px;
+}
+
+.index_banner img {
+  position: relative;
+  width: 100%;
+}
+.index_banner_background {
+  background: url(../images/index_banner.jpg)center / cover no-repeat;
+	height: 56.666667vw;
+	width: auto;
+	position: relative;
+  z-index: -3;
+}
+
+
+.index_banner .index_banner_title {
+  position: absolute;
+  /* top: calc(84px + 47px);
+  left: 288px;
+  font-size: 84px;
+  letter-spacing: 13px; */
+  top: 2.447917vw;
+  left: 15vw;
+  font-size: 4.375vw;
+  letter-spacing: 0.677083vw;
+  line-height: 1.2;
+  font-weight: bolder;
+}
+
+.index_banner .index_banner_text {
+  position: absolute;
+  /* top: calc(84px + 260px);
+  left: 300px;
+  font-size: 25px;
+  letter-spacing: 4px; */
+  top: 13.341667vw;
+  left: 15.625vw;
+  font-size: 1.302083vw;
+  letter-spacing: 0.208333vw;
+  line-height: 1.2;
+  filter: blur(40px);
+  transition: filter 1.8s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 1.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.index_banner .index_banner_text.active {
+  filter: blur(0px);
+}
+
+/* .index_banner.active > img {
+  animation: zoomUp 10s linear 0s 1 normal both;
+} */
+
+.index_banner .banner_title {
+  display: flex;
+}
+
+.index_banner .title_br {
+  float: left;
+}
+
+/* 孩子的眼睛，需要我們共同守護 end */
+
+/*近視造成的傷害-外容器、標題*/
+.wrap_a{
+  background-color: #f8eae2;
+  width: 100%;
+  padding: 3.64583% 0 3.64583% 0;
+  position: relative;
+  z-index: 4;
+}
+.wrap_title{
+  width:50%;
+  margin:0 auto;
+}
+.wrap_title h2{
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 60px;
+  font-weight: bolder;
+  letter-spacing: 6px;
+  margin-bottom: 2.34375%;
+}
+.title_a h2{
+  color:#f55f25;
+}
+.wrap_title img{
+  width:100%;
+}
+/*插圖*/
+.img_r_1{
+  position: absolute;
+  right: 0;
+  top:60%;
+}
+.img_l_1{
+  position: absolute;
+  left: 1%;
+  bottom: -5%;
+}
+
+/*近視造成的傷害-區塊內容*/
+.content_a{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:0 auto;
+  width: 60.41667%;
+  margin-top: 2.5%;
+}
+
+.block_background{
+  width: 100%;
+  padding: 1.5625% 0 1.5625% 0;
+  background-color: #ffff;
+  border-radius:15px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.block_backg_b{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.icon_q{
+  position: absolute;
+  top:-35px;
+  left:-31px;
+  width: 67px;
+  height: 70px;
+}
+
+.block_text{
+  margin: 0 auto;
+  margin-left:5%;
+  margin-right: 5%;
+}
+.block_text_a{
+  width: 45%;
+}
+.block_text_b{
+  width: 90%;
+  padding-bottom: 20px;
+  border-bottom: #7c7c7c solid 1px;
+}
+
+.block_text h3{
+  font-size: 22px;
+  line-height: 46px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.block_text p{
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  font-family: 'Noto Sans TC', sans-serif;
+  color:#222020;
+}
+.img_block_b3{
+  width: 94px;
+  height: 88px;
+}
+
+.img_block_a_1{
+  position: absolute;
+  right: 107px;
+  margin: 0 auto;
+  width: 452px;
+  height: auto;
+  max-width: 100%;
+}
+
+.block_b{
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+}
+
+.block_b3{
+  display: flex;
+  justify-content:flex-start;
+  width: 33%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.block_text span p{
+  font-weight: bolder;
+  margin-bottom: 7px;
+}
+/*近視造成的傷害-文章連結*/
+.article_link_a{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #ffff;
+  margin-top: 3%;
+}
+.article_link_a_left{
+  width: 80%;
+  padding: 1% 2% 1% 3%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.article_link_a_left p{
+  margin-left: 2%;
+  font-size: 22px;
+  font-weight:400;
+  letter-spacing: 3px;
+  font-family: 'Noto Sans TC', sans-serif;
+
+}
+.article_link_a_right{
+  width: 20%;
+  background-color: #e5004f;
+  padding: 1% 0 1% 0;
+  transition: background-color 0.5s linear;
+}
+
+.article_link_a_right:hover {
+  background-color: #aaabee;
+}
+
+.article_link_a_right a{
+  display: block;
+  text-decoration: none;
+}
+
+.article_link_a_right p{
+  color: #ffff;
+  text-align: center;
+  font-size: 22px;
+  font-weight:300;
+  letter-spacing: 3px;
+  font-family: 'Noto Sans TC', sans-serif;
+
+}
+
+/*近視怎麼產生-外容器、標題、插圖*/
+.wrap_b{
+  background-color: #f3f0fd;
+  z-index: 3;
+}
+.img_r_2{
+  position: absolute;
+  bottom: 15%;
+  right: 2%;
+}
+.title_b h2{
+  color:#f55f25;
+}
+.title_b img{
+  width:100%;
+}
+/*近視怎麼產生-區塊內容*/
+.block_d{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.block_d_1_img{
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+.block_e{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.block_e_type{
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+.block_e_top img{
+  display: block;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.block_e3{
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block_e3_text{
+  margin-top: 20px;
+}
+
+.block_text_e3 p{
+  line-height: 16px;
+  text-align: center;
+}
+
+.img_block_f{
+  margin: 0 auto;
+  margin-top: 3%;
+}
+.block_f{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.button_b {
+  display: block;
+  background-color:#dc3a55;
+  width: 100%;
+  height: 30px;
+  border-radius:70px;
+  text-decoration: none;
+  padding-top:1%;
+  padding-bottom:1%;
+  margin-top: 5%;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  color:#ffff;
+  text-align: center;
+  transition: background-color 0.5s linear;
+}
+
+.button_b  span {
+  position: relative;
+}
+
+.button_b span:before {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: -55px;
+  width: 37px;
+  height: 27px;
+  margin: -13.5px 0 0 0;
+  background: url(../images/icon_magnifier.png) center / contain no-repeat;
+  content: '';
+}
+
+.button_b span:after {
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: -50px;
+  width: 29px;
+  height: 9px;
+  margin: -4.5px 0 0 0;
+  background: url(../images/arrow.png) center / contain no-repeat;
+  content: '';
+  transition: transform 0.5s linear;
+}
+
+.button_b:hover {
+  background: #ffb1be;
+}
+
+.button_b:hover span:after {
+  transform: translate(5px, 0);
+}
+
+.button_c:hover {
+  background: #f9da7b;
+}
+
+/*管理近視很重要-外容器、標題、插圖*/
+.wrap_c{
+  background-color: #fff1e9;
+}
+.img_l_2{
+  position: absolute;
+  top:-2%;
+  left: 2%;
+  z-index: 4;
+}
+.img_r_3{
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+}
+.title_c h2{
+  color: #f55f25;
+}
+.title_c img{
+  width:100%;
+}
+/*管理近視很重要-區塊內容*/
+
+
+.block_backg_h{
+  width: 100%;
+}
+.block_h{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.img_c1{
+  margin-right:5% ;
+}
+.block_text_h {
+  margin-right: 3%;
+}
+.block_backg_i {
+  padding: 30px 0 30px 0;
+  width: 100%;
+  background-color: #ffff;
+  border-radius:20px;
+  position: relative;
+  margin: 3% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.block_text_h span{
+  font-weight: bolder;
+  margin-bottom: 7px;
+}
+.block_i{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+.block_i3{
+  width:33%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.block_i3 p{
+  color: #222020;
+  font-family: 'Noto Sans TC', sans-serif;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.block_i3_text{
+  display: block;
+  background-color: #fffad6;
+  margin-top: 6%;
+  padding: 2%;
+}
+
+.block_i3 img{
+  display: block;
+  margin: 0 auto;
+}
+
+.info {
+  width: 95%;
+  margin:0 auto;
+  overflow: hidden;
+}
+.info p {
+  color: #7c7c7c;
+  font-size: 7px;
+  line-height: 20px;
+  margin: 5%;
+}
+
+/*網頁版*/
+@media (max-width: 1900px) {
+  .img_block_f{
+    width: 57.10526vw;
+  }
+  .img_block_a_1{
+    right: 5.57292vw;
+    width:23.541667vw;
+  }  
+}
+
+@media (max-width: 1700px) {
+  .block_i3_text p{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .img_r_1{
+    width: 15.5823vw;
+  }
+  .img_l_1{
+    width: 16.2941vw;
+  }
+  .img_r_2{
+    width: 14.3529vw;
+  }
+
+  .img_l_2{
+    width: 14.1176vw;
+  }
+
+  .img_r_3{
+    width: 11.6471vw;
+  }
+  .img_l_3 {
+    width: 15.208333vw;
+  }
+}
+
+@media (max-width: 1550px) {
+  .icon_q{
+    width: 4.32258vw;
+    height: auto;
+  }  
+  .title_a h2 {
+    font-size: 3.87097vw;
+  }
+  .title_b h2{
+    font-size: 3.87097vw;
+  }
+  .title_c h2{
+    font-size: 3.87097vw;
+  }
+  .block_b{
+    width: 65%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .block_b3{
+    width: 100%;
+    margin: 0 auto;
+    margin:20px 0 20px 0;
+  }
+  .block_e3{
+    flex-direction: column;
+  }
+  .block_text_e3{
+    margin-top: 20px;
+  }
+  .block_i3_img{
+    width: 12.3226vw;
+  }
+  .article_link_a_left p{
+    font-size: 1.41935vw;
+  }
+  .article_link_a_right p{
+    font-size: 1.41935vw;
+  }
+
+}
+
+@media (max-width: 1440px){
+  .block_h{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .img_c1{
+    margin:0 auto;
+    margin-top: 3%;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* 孩子的眼睛，需要我們共同守護 */
+  .index_banner {
+    padding-top: 7vw;
+  }
+
+  .index_banner .index_banner_title {
+    top: calc(1vw + 2.447917vw);
+  }
+  
+  .index_banner .index_banner_text {
+    top: calc(7vw + 7.541667vw);
+  }
+
+  /* 孩子的眼睛，需要我們共同守護 end */
+}
+
+
+@media (max-width: 1100px) {
+
+  .block_text h3{
+    font-size: 2vw;
+    line-height: 4.18182vw;
+    letter-spacing: 0.27273vw;
+  }
+  .block_text p{
+    font-size: 1.45455vw;
+    line-height:2.36364vw;
+    letter-spacing: 0.18182vw;
+  }    
+  .block_d_1_img{
+    width: 35.36364vw;
+    margin: 0 auto;
+  }
+  .block_d_2_img{
+    width: 57.90901vw;
+  }
+  .block_d_3_img{
+    width: 12.90901vw;
+  }
+  .block_d_4_img{
+    width: 8.09091vw;
+  }
+  .block_d_5_img{
+    width: 12.63636vw;
+  }
+  .block_e_type{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .info p{
+    font-size: 0.6363vw;
+    line-height:1.81818vw ;
+  }
+  .button_b {
+    font-size:2vw;
+    letter-spacing:0.18182vw ;
+  }
+}
+
+@media (max-width: 980px){
+  .img_c1{
+    width:47.95918vw;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  /* 孩子的眼睛，需要我們共同守護 */
+  
+  .index_banner {
+    padding-top: 13.541667vw;
+  }
+
+  .index_banner_background {
+    background: url(../images/index_banner_m.jpg)center / cover no-repeat;
+    width: 100%;
+    height: 164.453125vw;;
+  }
+  
+  .index_banner .index_banner_title {
+    top: calc(13.541667vw + 1.802083vw);
+    left: 0;
+    font-size: 10.9375vw;
+    letter-spacing: 1.692708vw;
+    padding: 0 18.229167vw;
+  }
+  
+  .index_banner .index_banner_text {
+    top: calc(13.541667vw + 43.338542vw);
+    left: 0;
+    font-size: 3.255208vw;
+    letter-spacing: 0.390625vw;
+    padding: 0 18.229167vw;
+    line-height: 6.510417vw;
+    text-align: center;
+  }
+
+  /* .title_br {
+    width: 100%;
+    text-align: center;
+  } */
+
+  .index_banner .banner_title {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .index_banner .title_br {
+    width: 100%;
+  }
+
+  /* 孩子的眼睛，需要我們共同守護 end */
+
+  .wrap_a {
+    width: auto;
+    padding: 11.067708vw 5.208333vw 10.416667vw 5.208333vw;
+  }
+
+  .wrap_title {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 10.416667vw 0;
+  }
+
+  .wrap_title h2 {
+    /* font-size: 60px; */
+    /* line-height: 72px; */
+    font-size: 7.8125vw;
+    line-height: 9.375vw;
+    margin: 0 0 3.645833vw 0;
+  }
+  .wrap_title img {
+    max-width: 67.96875vw;
+  }
+
+  .content_a {
+    width: 100%;
+    margin: 0;
+  }
+
+  .block_background {
+    display: block;
+    width: auto;
+    padding: 9.114583vw 6.510417vw 6.510417vw 6.510417vw;
+    margin: 0 0 11.71875vw 0;
+  }
+  
+  .block_text {
+    width: 100%;
+    margin: 0 0 4.6875vw 0;
+  }
+
+  .block_text h3 {
+    /* font-size: 36px; */
+    /* line-height: 48px; */
+    font-size: 4.6875vw;
+    line-height: 6.25vw;
+    margin: 0 0 2.864583vw 0;
+    letter-spacing: 1px;
+  }
+
+  .block_text p {
+    /* font-size: 29px; */
+    /* line-height: 47px; */
+    font-size: 3.776042vw;
+    line-height: 6.119792vw;
+  }
+
+  .img_block_a_1 {
+    position: relative;
+    display: block;
+    width: 41.666667vw;
+    margin: 0 auto;
+  }
+
+  .block_text_b {
+    padding: 0;
+    border: none;
+  }
+
+  .block_b {
+    display: block;
+    width: auto;
+    padding: 0 5.208333vw 0 6.510417vw;
+    margin: 0;
+  }
+
+  .block_b3 {
+    margin: 4.557292vw 0 4.557292vw 0;
+  }
+
+  .block_b3:last-child {
+    margin: 4.557292vw 0 0 0;
+  }
+
+  .block_b3 .block_text {
+    margin: 0;
+  }
+
+  .img_block_b3 {
+    width: 12.239583vw;
+    height: 11.458333vw;
+    margin: 0 5.208333vw 0 0;
+  }
+
+  .block_d_1_img {
+    width: 50.651042vw;
+    height: 41.927083vw;
+    max-width: 100%;
+  }
+  .block_d_2_img{
+    width: 82.942708vw;
+    max-width: 100%;
+  }
+  .block_d_3_img{
+    width: 18.489583vw;
+    max-width: 100%;
+  }
+  .block_d_4_img{
+    width: 11.588542vw;
+    max-width: 100%;
+  }
+  .block_d_5_img{
+    width: 18.098958vw;
+    max-width: 100%;
+  }
+
+  .icon_q {
+    top: -4.557292vw;
+    left: 1.302083vw;
+    width: 8.723958vw;
+    height: 9.114583vw;
+  }
+  
+  .article_link_a_left {
+    /* width: 61.848958vw; */
+    width: 59.505208vw;
+    padding: 3.125vw 2.34375vw 3.125vw 2.34375vw;
+  }
+
+  .article_link_a_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25.390625vw;
+    padding: 3.125vw 0;
+  }
+
+  .article_link_a_right p {
+    font-size: 2.864583vw;
+    letter-spacing: 1px;
+  }
+  .article_link_a_left p {
+    font-size: 2.864583vw;
+    letter-spacing: 1px;
+    margin-left: 1.5625vw;
+  }
+
+  .block_e_top img {
+    width: 82.942708vw;
+    max-width: 100%;
+    margin: 0 auto 5.989583vw auto;
+  }
+  .block_e_type {
+    flex-direction: column;
+    align-items: center;
+  }
+  .block_e3 {
+    width: 100%;
+    margin: 3.2552vw;
+  }
+
+  .block_text span p {
+    /* font-size: 36px; */
+    /* line-height: 46px; */
+    font-size: 4.6875vw;
+    line-height: 5.989583vw;
+    margin-bottom: 0.911458vw;
+  }
+
+  .block_text_e3 {
+    margin: 2.604167vw 0 0 0;
+  }
+
+  .img_block_f {
+    width: 82.291667vw;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+
+  .button_b {
+    /* font-size: 28px; */
+    /* line-height: 28px; */
+    font-size: 3.645833vw;
+    line-height: 3.645833vw;
+    border-radius: 3.90625vw;
+    height: auto;
+    padding: 2.864583vw 0;
+    margin: 0 0 0 0;
+  }
+  
+  .button_b span:before {
+    left: -7.161458vw;
+    width: 4.817708vw;
+    height: 3.515625vw;
+    margin: -1.757813vw 0 0 0;
+  }
+  
+  .button_b span:after {
+    right: -6.510417vw;
+    width: 3.776042vw;
+    height: 1.171875vw;
+    margin: -0.585938vw 0 0 0;
+  }
+  
+  .img_c1 {
+    width: 74.739583vw;
+    height: 23.567708vw;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .block_i3_img {
+    width: 24.088542vw;
+    max-width: 100%;
+  }
+
+  .block_i {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .block_backg_i {
+    display: block;
+    width: auto;
+    padding: 9.114583vw 6.510417vw 6.510417vw 6.510417vw;
+    margin: 0 0 11.71875vw 0;
+    border-radius: 1.953125vw;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .info p {
+    font-size: 1.5625vw;
+    line-height: 3.34375vw;
+    margin: 11.71875vw 0 0 0;
+  }
+  .blocktext_br {
+    display: block;
+  }
+  .block_i3_text p{
+    /* font-size: 22px; */
+    /* line-height: 32px; */
+    font-size: 2.864583vw;
+    line-height: 4.166667vw;
+  }
+}
+
+
+@media (max-width: 575px) {
+
+
+  .info p {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .index_map_info p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .index_map_info p::before {
+    width: 9px;
+    height: 9px;
+    margin: -4.5px 0 0 0;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .article_link_a_left p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
