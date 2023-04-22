@@ -1,807 +1,198 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>cooper</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/index_cut1.css">
-  <link rel="stylesheet" href="css/article.css">
-  <link rel="stylesheet" href="css/index_cut2.css">
-  <link rel="stylesheet" href="css/index_map.css">
-  <link rel="stylesheet" href="css/map.css">
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Merriweather+Sans:wght@700&display=swap" rel="stylesheet">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>會員中心</title>
+  <link rel="stylesheet" href="css/daterangepicker.css">
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <link rel="stylesheet" href="css/regular.css">
+  <link rel="stylesheet" href="css/solid.css">
+  <link rel="stylesheet" href="css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../design/css/nav.css">
+  <link rel="stylesheet" href="../design/css/footer.css">
+  <link rel="stylesheet" href="../design/css/header.css">
+  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="css/member_record.css">
+  <link rel="stylesheet" href="css/member.css">
+  <!-- plugins:css -->
+  <!-- <link rel="stylesheet" href="../../../../vendors/flag-icon-css/css/flag-icon.min.css"> -->
+  <!-- <link rel="stylesheet" href="css/flag-icon.min.css">
+  <link rel="stylesheet" href="../design/css/main.css">
+  <link rel="stylesheet" href="css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/simple-line-icons.css">
+  <link rel="stylesheet" href="css/feather.css">
+  <link rel="stylesheet" href="css/vendor.bundle.base.css"> -->
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <!-- <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="css/member.css">
+  <link rel="stylesheet" href="scss/_icons.scss"> -->
+  <!-- endinject -->
+  <!-- <link rel="shortcut icon" href="../../../../images/favicon.png" /> -->
 </head>
+
 <body>
-<!--懸浮物件-->
-<div class="leftside">
-  <div class="member">
-		<a href="../design_member/register.html">會員中心</a>
-	</div>
-  <div class="poster">
-    <a href="article.html">專欄與報導</a>
-  </div>
-  <div class="advisory">
-    <a href="map.html">諮詢站查詢</a>
-  </div>
-</div>
-<a class="gotop" href="#"></a>
-<!--表頭、選單-->
-<header class="header">
-  <div class="header_inner">
-    <h1><a href="./index.html">兒童近視諮詢室</a></h1>
-    <ul class="menu">
-      <li><a class="anchor_link" href="./index.html#content_point">台灣近視狂潮來臨</a></li>
-      <li><a class="anchor_link" href="./index.html#wrap_a_point">近視所造成的傷害</a></li>
-      <li><a class="anchor_link" href="./index.html#wrap_b_point">近視怎麼產生</a></li>
-      <li><a class="anchor_link" href="./index.html#wrap_c_point">管理近視很重要</a></li>
-      <!-- <li><a class="anchor_link" href="./index.html#wrap_a_point">近視衛教資訊</a></li> -->
-      <!-- <li><a href="#">聽聽醫生怎麼說</a></li> -->
-      <!-- <li><a href="#">媒體報導</a></li> -->
-      <!-- <li><a href="#">影音專區</a></li> -->
-      <!-- <li><a href="#">使用者分享</a></li> -->
-      <li><a href="map.html">諮詢點查詢</a></li>
-      <li><a href="../design_member/register.html">會員中心</a></li>
-    </ul>
-  </div>
-</header>
-<nav class="nav"><div class="nav_inner">
-    <ul class="nav_bar">
-      <li><a href="./index.html">首頁</a></li>
-      <li><a class="anchor_link" href="./index.html#content_point">台灣近視狂潮來臨</a></li>
-      <li><a class="anchor_link" href="./index.html#wrap_a_point">近視所造成的傷害</a></li>
-      <li><a class="anchor_link" href="./index.html#wrap_b_point">近視怎麼產生</a></li>
-      <li><a class="anchor_link" href="./index.html#wrap_c_point">管理近視很重要</a></li>
-      <!-- <li><a class="anchor_link" href="./index.html#wrap_a_point">近視衛教資訊</a></li> -->
-      <!-- <li><a href="#">聽聽醫生怎麼說</a></li> -->
-      <!-- <li><a href="#">媒體報導</a></li> -->
-      <!-- <li><a href="#">影音專區</a></li> -->
-      <!-- <li><a href="#">使用者分享</a></li> -->
-      <li><a href="map.html">諮詢點查詢</a></li>
-      <li><a href="../design_member/register.html">會員中心</a></li>
-    </ul>
-    <ul class="nav_scial">
-      <li><a href="#" class="icon_print">print</a></li>
-      <li><a href="#" class="icon_mail">mail</a></li>
-      <li><a href="#" class="icon_facebook">facebook</a></li>
-      <li><a href="#" class="icon_line">line</a></li>
-    </ul>
-</div></nav>
-<div class="nav_open for_mobile">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-<!--孩子的眼睛，需要我們共同守護-->
-<div class="index_banner">
-  <div class="index_banner_background">
-      <!-- <img class="for_pc" src="images/index_banner.jpg" alt="孩子的眼睛，需要我們共同守護">
-      <img class="for_mobile" src="images/index_banner_m.jpg" alt="孩子的眼睛，需要我們共同守護"> -->
-      <div class="index_banner_title">
-        <div class="banner_title clearfix">
-          <span style="color: #008cf8;">孩</span>
-          <span style="color: #f39800;">子</span>
-          <span style="color: #f55f25;">的</span>
-          <span style="color: #5cae4a;">眼</span>
-          <span style="color: #008cf8;">睛</span>
-        </div>
-        <div class="banner_title title_br clearfix">
-          <span style="color: #f55f25;">需</span>
-          <span style="color: #5cae4a;">要</span>
-          <span style="color: #008cf8;">我</span>
-          <span style="color: #f55f25;">們</span>
-        </div>
-        <div class="banner_title title_br clearfix">
-          <span style="color: #f39800">共</span>
-          <span style="color: #5cae4a;">同</span>
-          <span style="color: #f55f25;">守</span>
-          <span style="color: #008cf8;">護</span>
-        </div>
+  <nav class="navbar horizontal-layout col-lg-12 col-12 p-0">
+    <div class="container d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center">
+        <h8 class="member_header_title"><a href="member.html">兒童近視諮詢 <span>- 會員中心</span></a></h8>
       </div>
-      <div class="index_banner_text">孩童時期正是近視的好發期，與您一同把關防範近視風險造成的危害。</div>
-      <div class="scroll_down">
-        <p>SCROLL DOWN</p>
-        <i></i>
-      </div>
-  </div>
-</div>
-<!--台灣近視狂潮來臨-->
-<div class="content">
-  <div class="anchor_point" id="content_point"></div>
-  <div class="content_wave">
-    <img src="images/wave.png" alt="">
-  </div>
-  <div class="img_eye_box">
-    <div class="img_eye img_eye_l_1">
-      <div class="img_eye right_eye layer_box">
-        <div class="layer"></div>
-      </div>
-      <div class="img_eye left_eye layer_box">
-        <div class="layer"></div>
-      </div>
-    </div>
-    <div class="img_eye img_eye_l_2">
-      <div class="img_eye right_eye layer_box">
-        <div class="layer"></div>
-      </div>
-      <div class="img_eye left_eye layer_box">
-        <div class="layer"></div>
-      </div>
-    </div>
-    <div class="img_eye img_eye_l_3">
-      <div class="img_eye right_eye layer_box">
-        <div class="layer"></div>
-      </div>
-      <div class="img_eye left_eye layer_box">
-        <div class="layer"></div>
-      </div>
-    </div>
-    <div class="img_eye img_eye_l_4">
-      <div class="img_eye right_eye layer_box">
-        <div class="layer"></div>
-      </div>
-      <div class="img_eye left_eye layer_box">
-        <div class="layer"></div>
-      </div>
-    </div>
-    <div class="img_eye img_eye_l_5">
-      <div class="img_eye right_eye layer_box">
-        <div class="layer"></div>
-      </div>
-      <div class="img_eye left_eye layer_box">
-        <div class="layer"></div>
-      </div>
-    </div>
-    <div class="img_eye img_eye_m_1">
-      <div class="img_eye right_eye layer_box">
-        <div class="layer"></div>
-      </div>
-      <div class="img_eye left_eye layer_box">
-        <div class="layer"></div>
-      </div>
-    </div>
-    <div class="img_eye img_eye_m_2">
-      <div class="img_eye right_eye layer_box">
-        <div class="layer"></div>
-      </div>
-      <div class="img_eye left_eye layer_box">
-        <div class="layer"></div>
-      </div>
-    </div>
-    <div class="img_eye img_eye_r_1">
-      <div class="img_eye right_eye layer_box">
-        <div class="layer"></div>
-      </div>
-      <div class="img_eye left_eye layer_box">
-        <div class="layer"></div>
-      </div>
-    </div>
-    <div class="img_eye img_eye_r_2">
-      <div class="img_eye right_eye layer_box">
-        <div class="layer"></div>
-      </div>
-      <div class="img_eye left_eye layer_box">
-        <div class="layer"></div>
-      </div>
-    </div>
-    <div class="img_eye img_eye_r_3">
-      <div class="img_eye right_eye layer_box">
-        <div class="layer"></div>
-      </div>
-      <div class="img_eye left_eye layer_box">
-        <div class="layer"></div>
-      </div>
-    </div>
-    <div class="img_eye img_eye_r_4">
-      <div class="img_eye right_eye layer_box">
-        <div class="layer"></div>
-      </div>
-      <div class="img_eye left_eye layer_box">
-        <div class="layer"></div>
-      </div>
-    </div>
-    <div class="img_eye img_eye_r_5">
-      <div class="img_eye right_eye layer_box">
-        <div class="layer"></div>
-      </div>
-      <div class="img_eye left_eye layer_box">
-        <div class="layer"></div>
-      </div>
-    </div>
-    <div class="img_eye img_eye_r_6">
-      <div class="img_eye right_eye layer_box">
-        <div class="layer"></div>
-      </div>
-      <div class="img_eye left_eye layer_box">
-        <div class="layer"></div>
-      </div>
-    </div>
-  </div>
-  <div class="content_inner">
-    <div class="content_info">
-      <h2>TAIWAN MYOPIA FRENZY IS COMING</h2>
-      <h3>台灣近視狂潮來臨</h3>
-      <div class="line"></div>
-      <p>近視是全球盛行之疾病，其台灣兒童的盛行率更是以驚人的速度成長。<br>
-        根據世界衛生組織預測，自2010約20億人的近視人口，到了2050年可能增加至50億，將近全球人口的一半！</p>
-    </div>
-    <div class="numbergroup">
-      <div class="number" data-suffix="+" data-to="5000000000" data-from="1" data-speed="200" data-refresh-interval="0.7" data-decimals="0"></div>
-      <div class="number"><span>人</span></div>
-    </div>
-  </div>
-</div>
-<!--近視造成的傷害-->
-<div class="wrap_a">
-  <div class="anchor_point" id="wrap_a_point"></div>
-  <img class="img_r_1" src="images/r-1.png" alt="">
-  <img class="img_l_1" src="images/l-1.png" alt="">
-  <div class="wrap_title title_a">
-    <h2>近視所造成的傷害</h2>
-    <img src="images/injury_caused_by_myopia.png" alt="">
-  </div>
-  <div class="content_a">
-    <div class="block_background">
-      <img class="icon_q" src="images/q-r.png" alt="藍色問號">
-      <div class="block_text block_text_a">
-        <h3>近視是什麼?</h3>
-        <p>近視會造成視線模糊，是最常見的眼睛疾病，兒童的近視會隨著成長而加重。</p>
-      </div>
-      <img class="img_block_a_1" src="images/eye2.gif" alt="">
-    </div>
-    <div class="block_background block_backg_b">
-      <img class="icon_q" src="images/q-r.png" alt="藍色問號">
-      <div class="block_text block_text_b">
-        <h3>你知道嗎？若無妥善治療近視，可能會增加失明的風險！</h3>
-        <p>近視的程度會隨著眼睛成長而變化，視網膜組織也會被拉伸，然而近視惡化將有極大的風險導致視網膜剝離和近視性黃斑部病變，可能導致小孩永久失明。而這個風險會隨著小孩的近視程度加重而倍增。</p>
-      </div>
-      <div class="block_b">
-        <div class="block_b3">
-          <img class="img_block_b3" src="images/a-2.png" alt="">
-          <div class="block_text">
-            <span>
-              <p>白內障</p>
-            </span>
-            <p>高度近視的人容易有早發性白內障的趨勢。</p>
-          </div>
-        </div>
-        <div class="block_b3">
-          <img class="img_block_b3" src="images/a-3.png" alt="">
-          <div class="block_text">
-            <span>
-              <p>青光眼</p>
-            </span>
-            <p>雙親患有近視罹患青光眼的機率是無近視者的2-3倍;雙親皆為高度近視者罹患青光眼的風險更提高到14倍。</p>
-          </div>
-        </div>
-        <div class="block_b3">
-          <img class="img_block_b3" src="images/a-4.png" alt="">
-          <div class="block_text">
-            <span>
-              <p>視網膜剝離</p>
-            </span>
-            <p>55%的視網膜剝離都因為近視而造成，根據研究顯示雙親皆為高度近視者多出近八倍的風險發生視網膜剝離的可能。</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="block_background ">
-      <img class="icon_q" src="images/q-r.png" alt="藍色問號">
-      <div class="block_text">
-        <h3>妥善治療和預防對於避免潛在的眼睛健康問題非常重要。</h3>
-        <p>儘早治療並控制近視增長的速度是重要的，因兒童時期近視度數會隨成長而加深，易造成視網膜等相關的眼睛疾病發生。</p>
-      </div>
-    </div>
-    <!-- <div class="article_link_a">
-      <div class="article_link_a_left">
-        <img src="images/a-arti.png" alt="">
-        <p>聽聽醫生怎麼說：六招護眼，從小開始。</p>
-      </div>
-      <div class="article_link_a_right">
-        <a href="#">
-          <p>閱讀全文</p>
-        </a>
-      </div>
-    </div> -->
-    <!-- <div class="article_link_a">
-      <div class="article_link_a_left">
-        <img src="images/a-arti.png" alt="">
-        <p>聽聽醫生怎麼說：六招護眼，從小開始。</p>
-      </div>
-      <div class="article_link_a_right">
-        <a href="#">
-          <p>閱讀全文</p>
-        </a>
-      </div>
-    </div> -->
-  </div>
-</div>
-<!--近視怎麼產生-->
-<div class="wrap_b wrap_a">
-  <div class="anchor_point" id="wrap_b_point"></div>
-  <img class="img_r_2" src="images/r-2.png" alt=藥水插圖>
-  <div class="wrap_title title_b">
-    <h2>近視怎麼產生</h2>
-    <img src="images/how_does_myopia_occur.png" alt="">
-  </div>
-  <div class="content_a">
-    <div class="block_background block_backg_d">
-      <img class="icon_q" src="images/q-r.png" alt="紅色問號">
-      <div class="block_d">
-        <div class="block_text">
-          <h3>何時會發生近視?</h3>
-          <p>
-            近視是現在全世界青少年最常見的屈光不正問題，近視的平均好發年齡已逐漸降低，而近視發生時間越早，小孩越有可能發展成高度近視。大部分的近視加劇年齡是6-17歲，而這正是小孩成長的關鍵時期，特別是他們的眼睛。隨著小孩逐漸成長，他們可能需要度數更深的眼鏡，然而這可能造成生活上的負面影響。
-          </p>
-        </div>
-        <img class="block_d_1_img" src="images/b-1.png" alt="">
-      </div>
-    </div>
-    <div class="block_background block_backg_e">
-      <img class="icon_q" src="images/q-r.png" alt="紅色問號">
-      <div class="block_e">
-        <div class="block_e_top">
-          <div class="block_text">
-            <h3>什麼基因會導致近視?</h3>
-            <p><strong> 基因遺傳-</strong>若父母近視，小孩近視的風險即增加。</p>
-          </div>
-          <img class="block_d_2_img" src="images/b-2.png" alt="">
-        </div>
-        <div class="blok_e_bottom">
-          <div class="block_text block_e3_text">
-            <p><strong>生活型態-</strong>據研究指出，現代生活型態大大影響了近視的發展，也是造成近視的一大主因。</p>
-          </div>
-          <div class="block_e_type">
-            <div class="block_e3">
-              <img class="block_d_3_img" src="images/b-3.png" alt="風箏">
-              <div class="block_text block_text_e3">
-                <span>
-                  <p>戶外活動時間不足</p>
-                </span>
-              </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center">
+        <ul class="navbar-nav navbar-nav-right mr-0">
+          <li class="font-weight-normal">歡迎，侯侯侯 您好</li>
+          <li class="nav-item dropdown">
+              <img class="img-xs rounded-circle" src="images/member_test.png" alt="Profile image">
+          </li>
+          <li>
+            <div class="logout_box">
+              <a class="font-weight-normal" href="../design/index.html">登出</a>
             </div>
-            <div class="block_e3">
-              <img class="block_d_4_img" src="images/b-4.png" alt="燈泡">
-              <div class="block_text block_text_e3">
-                <span>
-                  <p>光線不足</p>
-                </span>
-              </div>
-            </div>
-            <div class="block_e3">
-              <img class="block_d_5_img" src="images/b-5.png" alt="書跟手機">
-              <div class="block_text block_text_e3">
-                <span>
-                  <p>長時間的近距離活動</p>
-                </span>
-                <p class="">例：打電動及使用3C產品</p>
-              </div>
-            </div>
-          </div>
-        </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler align-self-center color_fff" type="button" data-toggle="minimize">
+          <span class="fa fa-bars"></span>
+        </button>
       </div>
     </div>
-    <div class="block_background">
-      <img class="icon_q" src="images/q-r.png" alt="紅色問號">
-      <div class="block_f">
-        <div class="block_text">
-          <h3>近視有什麼跡象?</h3>
-          <p>常規的視力檢查對於兒童是否近視及儘早治療是非常重要的，
-            很多案例是無跡可循。<span class="blocktext_br" > 但以下是家長仍可以觀察的事項：</span>
-            ▶ 遠距離視力模糊 ▶ 在學校表現不佳 ▶離電視越來越近 ▶頭痛 ▶瞇眼 ▶頭痛 ▶眼睛疲勞</p>
-        </div>
-        <img class="img_block_f for_pc" src="images/b-6.png" alt="">
-        <img class="img_block_f for_mobile" src="images/b-6_m.png" alt="">
+    <div class="nav-bottom">
+      <div class="container">
+        <ul class="nav page-navigation">
+          <li class="nav-item">
+            <a href="member.html" class="nav-link"><i class="link-icon fas fa-house-user"></i><span class="menu-title member_title member_title_4">會員首頁</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="member_profile.html" class="nav-link"><i class="link-icon fa fa-user"></i><span class="menu-title member_title member_title_1">會員資料</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-toggle="modal" data-target="#patient_profile">
+              <i class="link-icon fa fa-plus"></i><span class="menu-title member_title member_title_1">初診基本資料</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="records_file.html" class="nav-link"><i class="link-icon fa fa-notes-medical"></i><span class="menu-title member_title member_title_3">診療紀錄</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="../design/index.html" class="nav-link"><i class="link-icon fa fa-home"></i><span class="menu-title member_title member_title_4">回到官網</span></a>
+          </li>
+        </ul>
       </div>
     </div>
-    <a href="map.html" class="button_b"><span>尋找值得信賴的眼科醫師</span></a>
-  </div>
-</div>
-<!--管理近視很重要-->
-<div class="wrap_c wrap_a">
-  <div class="anchor_point" id="wrap_c_point"></div>
-  <img class="img_l_2" src="images/l-2.png" alt="隱形眼鏡盒">
-  <img class="img_r_3" src="images/r-3.png" alt="鉛筆">
-  <div class="wrap_title title_c">
-    <h2>管理近視很重要</h2>
-    <img src="images/managing_myopia_is_important.png" alt="">
-  </div>
-  <div class="content_a">
-    <div class="block_background">
-      <img class="icon_q" src="images/q-r.png" alt="黃色問號">
-      <div class="block_d">
-        <div class="block_text">
-          <h3>為何管理近視很重要?</h3>
-          <p>不僅視力會受影響，需特別注意的是近視會因人而異的影響個人生活品質，而高度近視不只讓視線不佳，更可能會有經濟上、社交上及個人生活上的負面影響。若一個孩子被診斷為近視，父母必須除了和驗光師討論如何矯正近視外，也需討論何種管理方法可以抑制近視發展，且最適合孩子及他們的生活型態。抑制近視發展是減少之後高度近視及其相關疾病之風險重要的一環，有鑒於高度近視與併發症如視網膜剝離、青光眼、白內障和近視性黃斑部病變息息相關，因而引起高度關注，且其風險會隨著近視加重而提高。</p>
-        </div>
-      </div>
-    </div>
-    <div class="block_background">
-      <img class="icon_q" src="images/q-r.png" alt="黃色問號">
-      <div class="block_h">
-        <div class="block_text block_text_h">
-          <h3>下列方法可幫助你的孩子延緩近視</h3>
-          <p><span>戶外活動：</span>據最新研究，每天花120分鐘於戶外活動的兒童罹患近視的風險較低。</p>
-          <p><span>閱讀習慣：</span>正確的閱讀習慣與寫字姿勢，保持足夠的光線及適當的用眼距離。</p>
-          <p><span>適當休息：</span>近距離用眼30分鐘應休息10分鐘。</p>
-          <p><span>定期檢查：</span>定期與眼科醫師追蹤檢查視力，有症狀發生時儘早行動並諮詢醫師。</p>
-        </div>
-        <img class="img_c1" src="images/c-1.png" alt="">
-      </div>
-    </div>
-    <div class="block_backg_i">
-      <img class="icon_q" src="images/q-r.png" alt="黃色問號">
-      <div class="block_text">
-        <h3>近視控制有哪些選擇？</h3>
-      </div>
-      <div class="block_i">
-        <div class="block_i3">
-          <img class="block_i3_img" src="images/c-4.png" alt="近視控制軟式日拋隱形眼鏡">
-          <div class="block_i3_text">
-            <p>近視控制軟式日拋隱形眼鏡</p>
-          </div>
-        </div>
-        <div class="block_i3">
-          <img class="block_i3_img" src="images/c-2.png" alt="散瞳劑">
-          <div class="block_i3_text">
-            <p>散瞳劑</p>
-          </div>
-        </div>
-        <div class="block_i3">
-          <img class="block_i3_img" src="images/c-3.png" alt="硬式角膜塑型片">
-          <div class="block_i3_text">
-            <p>硬式角膜塑型片</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a href="map.html" class="button_b"><span>尋找值得信賴的眼科醫師</span></a>
-  </div>
-  <div class="info">
-    <p>參考資料：<br>
-      ❶The impact of myopia and high myopia. A Report of the Joint World Health Organization – Brien Holden Vision Institute Global Scientific Meeting on Myopia. University of New South Wales, Sydney, Australia 16–18 March 2015. https://www.who.int/blindness/causes/MyopiaReportforWeb.pdf ❷.Bourne RR, Stevens GA, White RA, Smith JL, Flaxman SR, Price H et al. Causes of vision loss worldwide, 1990-2010: a systematic analysis. Lancet Global Health. 2013;1:e339–e349. ❸.Wolsohn JS, Calossi A, Cho P, et al. Global Trends in Myopia Management Attitudes and Strategies in Clinical Practice. Cont Lens Anterior Eye. 2016; 39:106–16.    ❹.Gifford P, Gifford KL. The Future of Myopia Control Contact Lenses. Optom Vis Sci.; 93:336-43.❺.Morgan P. Is Myopia Control the Next Contact Lens Revolution? The Optician 2016.❻www.visionsource.com❼www.aao.org❽Rose KA, Morgan IG, Ip J, et al. Outdoor Activity Reduces the Prevalence of Myopia in Children. Ophthalmology 2008; 115:1279-1285.❾Chamberlain P, Logan N, Jones D, Gonzalez-Meijome J, Saw S-M, Young G. Clinical evaluation of a dual-focus myopia control 1 day soft contact lens: 3-year results. Presented at: British Contact Lens Association Clinical Conference, Liverpool, England. *Compared with a single-vision, one-day lens over a three-year period. Individual results may vary. Data on file, CooperVision.❿Flitcroft DI. The complex interactions of retinal, optical and environmental factors in myopia aetiology. Prog Retin Eye Res. 2012; 31(6) : 622-660..⓫Jeon S, Kim HS. Clinical Characteristics and Outcomes of Cataract Surgery in Highly Myopic Koreans. Korean Journal of Ophthalmology. 2011;25(2):84-90.⓬Mitchell P .Hourihan F, et al. The Relationship Between Glaucoma and Myopla : The Blue Mountains Eye Study. Ophthalmology. 1999 Oct; 106(10):2010-5⓭Epidemiol AJ.Risk factors for Idiopathic Rhegmatogenous Retinal Detachment. The Eye Disease Case-Control Study Group. American Journal of Epidemiology.1993 Apr.</p>
-  </div>
-</div>
-<!--聽聽醫生怎麼說-->
-<div class="wrap_doctor">
-	<div class="wrap_doctor_inner">
-		<img class="img_l_3" src="images/img_l_3.png" alt="">
-		<div class="wrap_title title_b">
-			<h2>聽聽醫生怎麼說</h2>
-			<img src="images/listen_to_the_doctor.png" alt="">
-    </div>
-    <div class="doctor_select_btnbox">
-      <a class="doctor_select_btn_l" href="#"><img src="images/doctor_select_btn_l.png" alt=""></a>
-      <a class="doctor_select_btn_r" href="#"><img src="images/doctor_select_btn_r.png" alt=""></a>
-      <div class="doctor_content">
-        <div class="doctor_box">
-          <div class="doctor_box_card">
-            <div class="doctor_img_background">
-              <div class="doctor_img"></div>
-            </div>
-            <div class="doctor_card_text_box">
-              <h3>您認為您的疼痛是 無法獲得治療的嗎?</h3>
-              <div class="doctor_card_line"></div>
-              <p>眼鏡科醫師 / 王大明</p>
-              <div class="btn_more doctor_btn">
-                <a href="#">MORE</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="doctor_box">
-          <div class="doctor_box_card">
-            <div class="doctor_img_background">
-              <div class="doctor_img"></div>
-            </div>
-            <div class="doctor_card_text_box">
-              <h3>您認為您的疼痛是 無法獲得治療的嗎?</h3>
-              <div class="doctor_card_line"></div>
-              <p>眼鏡科醫師 / 王大明</p>
-              <div class="btn_more doctor_btn">
-                <a href="#">MORE</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="doctor_box">
-          <div class="doctor_box_card">
-            <div class="doctor_img_background">
-              <div class="doctor_img"></div>
-            </div>
-            <div class="doctor_card_text_box">
-              <h3>您認為您的疼痛是 無法獲得治療的嗎?</h3>
-              <div class="doctor_card_line"></div>
-              <p>眼鏡科醫師 / 王大明</p>
-              <div class="btn_more doctor_btn">
-                <a href="#">MORE</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-	</div>
-</div>
-<!--媒體專欄-->
-<div class="wrap_media">
-	<div class="wrap_media_inner">
-		<div class="wrap_title title_b title_media">
-			<h2>媒體專欄</h2>
-			<img src="images/media_reports.png" alt="">
-		</div>
-		<div class="media_box">
-      <div class="media_box_card1">
-        <div class="media_card media_card1">
-          <div class="media_card_text media_card_text_1">
-            <div class="media_text_box">
-              <h4>2020/01/01</h4>
-              <h3>兒童近視怎麼辦？解析近視原因 預防方法，幫孩子的度數踩剎</h3>
-              <p>近視控制有三大指標：視力，度數，眼軸長。視力跟近視度數是無法換算的，因此並不能直接用視力推估真實度數。除了驗光測度數以及視力，</p>
-            </div>
-            <div class="btn_media">
-              <a href="#">MORE</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="media_box_card2">
-        <div class="media_card media_card2">
-          <div class="media_card_text">
-            <div class="media_text_box">
-              <h4>2020/01/01</h4>
-              <h3>兒童近視怎麼辦？解析近視原因 預防方法，幫孩子的度數踩剎</h3>
-              <p>近視控制有三大指標：視力，度數，眼軸長。視力跟近視度數是無法換算的，因此並不能直接用視力推估真實度數。除了驗光測度數以及視力，</p>
-            </div>
-            <div class="btn_media">
-              <a href="#">MORE</a>
-            </div>
-          </div>
-        </div>
-        <div class="media_card media_card3">
-          <div class="media_card_text">
-            <div class="media_text_box">
-              <h4>2020/01/01</h4>
-              <h3>兒童近視怎麼辦？解析近視原因 預防方法，幫孩子的度數踩剎</h3>
-              <p>近視控制有三大指標：視力，度數，眼軸長。視力跟近視度數是無法換算的，因此並不能直接用視力推估真實度數。除了驗光測度數以及視力，</p>
-            </div>
-            <div class="btn_media">
-              <a href="#">MORE</a>
-            </div>
-          </div>
-        </div>
+  </nav>
+  
 
-      </div>
-
-		</div>
-	</div>
-</div>
-<!--影音專區-->
-<div class="wrap_video">
-	<div class="wrap_video_inner">
-		<div class="wrap_title title_b title_video_for_pc">
-			<h2>影音專區</h2>
-      <img src="images/media_icon.png" alt="">
-      <img class="video_img" src="images/video.png" alt="">
-    </div>
-    <div class="wrap_title title_b title_video_for_mobile">
-      <img src="images/media_icon.png" alt="">
-      <div class="title_video_for_mobile_box" >
-        <h2>影音專區</h2>
-        <img class="video_mobile" src="images/video_mobile.png" alt="">
-      </div>  
-      <img class="video_img" src="images/media_icon2.png" alt="">
-    </div>
-    <div class="video_selectbtn_box">
-      <a class="video_select_btn_l" href="#"><img src="images/doctor_select_btn_l.png" alt=""></a>
-      <a class="video_select_btn_r" href="#"><img src="images/doctor_select_btn_r.png" alt=""></a>
-      <div class="video_content">
-        <div class="video_box">
-          <div class="video_box_inner">
-            <div class="video_v1">
-              <iframe  src="https://www.youtube.com/embed/9C6tdHYHuqs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="video_text">
-              <h3>當小孩一但近視，父母該怎麼辦?當小孩一但近視，父母該怎麼辦?當小孩一但近視，父母該怎麼辦?</h3>
-              <p>很多家長都認為近視是可以透過手術的方式達到根治的目的，也因為如此往往讓家長並沒有非常重視這個問題</p>
-            </div>
-            <div class="btn_more btn_video">
-              <a href="#">MORE</a>
+<div class="container-scroller">
+  <div class="container-fluid page-body-wrapper">
+    <div class="main-panel">
+      <div class="content-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="col-12 align-items-center">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 text-center">
+                        <img src="images/member_test.png" class="img-xlg rounded-circle" alt="profile image"/>
+                      </div>
+                      <div class="col-lg-9 col-md-8">
+                        <div class="pt-4-768">
+                          <label class="text_center_768 font-weight-medium member_name col-12 doctor mb-0">侯鈞賀</label>
+                        </div>
+                        <div class="border-bottom col-12 m-2"></div>
+                        <div class="text-left text-left_to_center font-weight-normal">
+                          <div class="col-lg-12 pt-0">
+                            <h5 class="d-inline-block">帳號：</h5>
+                            <label class="status_ok">coopertest@gmail.com</label>
+                          </div>
+                          <div class="col-lg-12 pt-0">
+                            <h5 class="d-inline-block">服務院所：</h5>
+                            <label>大學眼科-公館店</label>
+                          </div>
+                        </div>
+                        <div class="col-12 text-left mt-3 text_center_768">
+                          <a class="btn btn-primary btn-lg font-weight-medium auth-form-btn register_btn" href="member_profile.html">修改資料</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="video_box">
-          <div class="video_box_inner">
-            <div class="video_v1">
-              <iframe  src="https://www.youtube.com/embed/9C6tdHYHuqs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="member_main_btn_box mt-5">
+            <div class="member_main_btn mb-4">
+              <button type="button" class="btn btn-lg font-weight-medium auth-form-btn" data-toggle="modal" data-target="#patient_profile"><i class="fa fa-plus btn-icon-prepend"></i>初診基本資料</button>
             </div>
-            <div class="video_text">
-              <h3>當小孩一但近視，父母該怎麼辦?</h3>
-              <p>很多家長都認為近視是可以透過手術的方式達到根治的目的，也因為如此往往讓家長並沒有非常重視這個問題</p>
-            </div>
-            <div class="btn_more btn_video">
-              <a href="#">MORE</a>
+            <!-- 診療紀錄按鈕 -->
+            <div class="member_main_btn member_main_btn_2">
+              <a class="btn btn-lg font-weight-medium auth-form-btn" href="records_file.html"><i class="fa fa-notes-medical btn-icon-prepend color_orange"></i>診療紀錄</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-	</div>
-</div>
-<!--使用者分享-->
-<div class="wrap_usersharing">
-  <div class="usersharing_ibackground_img_box">
-    <img class="usersharing_background_img img_user_1" src="images/user_1.png" alt="">
-    <img class="usersharing_background_img img_user_2" src="images/user_2.png" alt="">
-    <img class="usersharing_background_img img_user_3" src="images/user_3.png" alt="">
-    <img class="usersharing_background_img img_user_4" src="images/user_4.png" alt="">
-  </div>
-	<div class="wrap_usersharing_inner">
-		<div class="wrap_title title_b usersharing_title">
-			<h2>使用者分享</h2>
-			<img src="images/user_sharing.png" alt="">
-		</div>
-		<div class="usersharing_box">
-      <div class="usersharing_card_box">
-        <div class="usersharing_card">
-          <div class="usersharing_img"></div>
-          <div class="usersharing_card_title">
-            <h4>不犀利人妻</h4>
-            <h3>治療兒童近視好方法</h3>
-          </div>
-          <div class="usersharing_card_text">
-            <p>在隱形眼鏡普及化的現在，幾乎連沒有近視的人都會戴起隱形眼鏡；例如：美容放大片或角膜變色片等等。但是在這一龐大的隱形眼鏡使用族群。</p>
-          </div>
-          <div class="btn_more usersharing_btn">
-            <a href="#">MORE</a>
-          </div>
-        </div>
-      </div>
-      <div class="usersharing_card_box">
-        <div class="usersharing_card">
-          <div class="usersharing_img"></div>
-          <div class="usersharing_card_title">
-            <h4>不犀利人妻</h4>
-            <h3>治療兒童近視好方法</h3>
-          </div>
-          <div class="usersharing_card_text">
-            <p>在隱形眼鏡普及化的現在，幾乎連沒有近視的人都會戴起隱形眼鏡；例如：美容放大片或角膜變色片等等。但是在這一龐大的隱形眼鏡使用族群。</p>
-          </div>
-          <div class="btn_more usersharing_btn">
-            <a href="#">MORE</a>
-          </div>
-        </div>
-      </div>
-      <div class="usersharing_card_box">
-        <div class="usersharing_card">
-          <div class="usersharing_img"></div>
-          <div class="usersharing_card_title">
-            <h4>不犀利人妻</h4>
-            <h3>治療兒童近視好方法</h3>
-          </div>
-          <div class="usersharing_card_text">
-            <p>在隱形眼鏡普及化的現在，幾乎連沒有近視的人都會戴起隱形眼鏡；例如：美容放大片或角膜變色片等等。但是在這一龐大的隱形眼鏡使用族群。</p>
-          </div>
-          <div class="btn_more usersharing_btn">
-            <a href="#">MORE</a>
-          </div>
-        </div>
-      </div>
-      <div class="usersharing_card_box">
-        <div class="usersharing_card">
-          <div class="usersharing_img"></div>
-          <div class="usersharing_card_title">
-            <h4>不犀利人妻</h4>
-            <h3>治療兒童近視好方法</h3>
-          </div>
-          <div class="usersharing_card_text">
-            <p>在隱形眼鏡普及化的現在，幾乎連沒有近視的人都會戴起隱形眼鏡；例如：美容放大片或角膜變色片等等。但是在這一龐大的隱形眼鏡使用族群。</p>
-          </div>
-          <div class="btn_more usersharing_btn">
-            <a href="#">MORE</a>
-          </div>
-        </div>
-      </div>
-      <div class="usersharing_card_box">
-        <div class="usersharing_card">
-          <div class="usersharing_img"></div>
-          <div class="usersharing_card_title">
-            <h4>不犀利人妻</h4>
-            <h3>治療兒童近視好方法</h3>
-          </div>
-          <div class="usersharing_card_text">
-            <p>在隱形眼鏡普及化的現在，幾乎連沒有近視的人都會戴起隱形眼鏡；例如：美容放大片或角膜變色片等等。但是在這一龐大的隱形眼鏡使用族群。</p>
-          </div>
-          <div class="btn_more usersharing_btn">
-            <a href="#">MORE</a>
-          </div>
-        </div>
-      </div>
-      <div class="usersharing_card_box">
-        <div class="usersharing_card">
-          <div class="usersharing_img"></div>
-          <div class="usersharing_card_title">
-            <h4>不犀利人妻</h4>
-            <h3>治療兒童近視好方法</h3>
-          </div>
-          <div class="usersharing_card_text">
-            <p>在隱形眼鏡普及化的現在，幾乎連沒有近視的人都會戴起隱形眼鏡；例如：美容放大片或角膜變色片等等。但是在這一龐大的隱形眼鏡使用族群。</p>
-          </div>
-          <div class="btn_more usersharing_btn">
-            <a href="#">MORE</a>
-          </div>
-        </div>
-      </div>
-      <a href="#" class="button_usersharing"><span>載入更多</span></a>
-		</div>
-	</div>
-</div>
-<!--地圖、諮詢點查詢-->
-<div class="index_map">
-  <div class="map"></div>
-  <div class="index_map_info">
-    <div class="m_i_lefttop">
-      <div class="map_info_title"></div>
-      <h2>諮詢點查詢</h2>
-    </div>
-    <div class="m_i_leftmiddle">
-      <div class="m_i_infotext_title">
-        <h3>注意事項</h3>
-      </div>
-      <div class="m_i_infotext">
-        <p>本網站所提供的台灣地區醫療院所聯絡方式及資訊,乃基於公眾服務立場。</p>
-        <p>本所清單所搜集之資訊為各醫療院所之公開資訊,但不保證是所有相關醫療院所得資訊。</p>
-        <p>此清單目的是協助大眾找到較方便就診的醫療院所,其編排順序係為隨機而定,不具其他任何特別意義。</p>
-        <p>此清單目的是協助大眾找到較方便就診的醫療院所,其編排順序係為隨機而定,不具其他任何特別意義。</p>
-      </div>
-    </div>
-    <a href="map.html" class="btn_more">MORE</a>
   </div>
 </div>
 
-<!--表尾-->
-<footer class="footer">
-  <div class="footerlink">
-    <div class="linkleft">
-      <h2>快速連結</h2>
-      <ul>
-        <li><a href="./index.html">首頁</a></li>
-        <li><a href="map.html">諮詢據點</a></li>
-        <!-- <li><a href="#">關於近視</a></li> -->
-        <!-- <li><a href="#">產品介紹</a></li> -->
-        <!-- <li><a href="#">報導與專欄</a></li> -->
-      </ul>
+  <!--表尾-->
+  <footer class="footer">
+    <div class="footerlink">
+      <div class="linkleft">
+        <h2>快速連結</h2>
+        <ul>
+          <li><a href="./index.html">首頁</a></li>
+          <li><a href="map.html">諮詢據點</a></li>
+          <!-- <li><a href="#">關於近視</a></li> -->
+          <!-- <li><a href="#">產品介紹</a></li> -->
+          <!-- <li><a href="#">報導與專欄</a></li> -->
+        </ul>
+      </div>
+      <div class="linkright">
+        <h2><span>關於近視</span></h2>
+        <ul>
+          <li><a class="anchor_link" href="./index.html#content_point">台灣近視狂潮來臨</a></li>
+          <li><a class="anchor_link" href="./index.html#wrap_a_point">近視所造成的傷害</a></li>
+          <li><a class="anchor_link" href="./index.html#wrap_b_point">近視怎麼產生</a></li>
+          <li><a class="anchor_link" href="./index.html#wrap_c_point">管理近視很重要</a></li>
+          <!-- <li><a href="#">為什麼控制近視是重要的？</a></li>
+          <li><a href="#">需要注意哪些事項？</a></li> -->
+        </ul>
+      </div>
+      <div class="footer_icon">
+        <a href="#" class="icon_print">print</a>
+        <a href="#" class="icon_mail">mail</a>
+        <a href="#" class="icon_facebook">facebook</a>
+        <a href="#" class="icon_line">line</a>
+      </div>
     </div>
-    <div class="linkright">
-      <h2><span>關於近視</span></h2>
-      <ul>
-        <li><a class="anchor_link" href="./index.html#content_point">台灣近視狂潮來臨</a></li>
-        <li><a class="anchor_link" href="./index.html#wrap_a_point">近視所造成的傷害</a></li>
-        <li><a class="anchor_link" href="./index.html#wrap_b_point">近視怎麼產生</a></li>
-        <li><a class="anchor_link" href="./index.html#wrap_c_point">管理近視很重要</a></li>
-        <!-- <li><a href="#">為什麼控制近視是重要的？</a></li>
-        <li><a href="#">需要注意哪些事項？</a></li> -->
-      </ul>
-    </div>
-    <div class="footer_icon">
-      <a href="#" class="icon_print">print</a>
-      <a href="#" class="icon_mail">mail</a>
-      <a href="#" class="icon_facebook">facebook</a>
-      <a href="#" class="icon_line">line</a>
-    </div>
-  </div>
-  <p class="copyright">Copyright 2020 Child Myopia.All Right Reserved.</p>
-</footer>
-<script src="js/jquery.js"></script>
-<script src="js/TweenMax.js"></script>
-<script src="js/ScrollToPlugin.js"></script>
-<script src="js/jquery.countTo.js"></script>
-<script src="js/scroll.listener.js"></script>
-<script src="js/main.js"></script>
+    <p class="copyright">Copyright 2020 Child Myopia.All Right Reserved.</p>
+  </footer>
+
+
+  <!-- <script src="../design/js/jquery.js"></script>
+  <script src="../design/js/TweenMax.js"></script>
+  <script src="../design/js/ScrollToPlugin.js"></script>
+  <script src="../design/js/jquery.countTo.js"></script>
+  <script src="../design/js/scroll.listener.js"></script>
+  <script src="../design/js/main.js"></script>
+  <script src="js/vendor.bundle.base.js"></script>
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script> -->
+  <script src="js/jquery.js"></script>
+  <script src="js/moment.js"></script>
+  <script src="js/daterangepicker.js"></script>
+  <script src="js/template.js"></script>
 </body>
+
 </html>
