@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant" style="height: 100%;">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!-- basic html Meta Tags -->
+  <meta name="robots" content="all" />
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>cooper</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/index_cut1.css">
+  <link rel="stylesheet" href="css/index_map.css">
+  <link rel="stylesheet" href="css/map.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Merriweather+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+<body style="height: 100%;">
+<!--懸浮物件-->
+<div class="leftside">
+  <div class="member">
+		<a href="../design_member/register.html">會員中心</a>
+	</div>
+  <div class="poster">
+    <a href="#">專欄與報導</a>
+  </div>
+  <div class="advisory">
+    <a href="map.html">諮詢站查詢</a>
+  </div>
+</div>
+<a class="gotop" href="#"></a>
+<!--表頭、選單-->
+<header class="header">
+  <div class="header_inner">
+    <h1><a href="./index.html">兒童近視諮詢室</a></h1>
+    <ul class="menu">
+      <li><a class="anchor_link" href="./index.html#content_point">台灣近視狂潮來臨</a></li>
+      <li><a class="anchor_link" href="./index.html#wrap_a_point">近視所造成的傷害</a></li>
+      <li><a class="anchor_link" href="./index.html#wrap_b_point">近視怎麼產生</a></li>
+      <li><a class="anchor_link" href="./index.html#wrap_c_point">管理近視很重要</a></li>
+      <!-- <li><a class="anchor_link" href="./index.html#wrap_a_point">近視衛教資訊</a></li> -->
+      <!-- <li><a href="#">聽聽醫生怎麼說</a></li> -->
+      <!-- <li><a href="#">媒體報導</a></li> -->
+      <!-- <li><a href="#">影音專區</a></li> -->
+      <!-- <li><a href="#">使用者分享</a></li> -->
+      <li><a href="map.html">諮詢點查詢</a></li>
+      <li><a href="../design_member/register.html">會員中心</a></li>
+    </ul>
+  </div>
+</header>
+<nav class="nav"><div class="nav_inner">
+    <ul class="nav_bar">
+      <li><a href="./index.html">首頁</a></li>
+      <li><a class="anchor_link" href="./index.html#content_point">台灣近視狂潮來臨</a></li>
+      <li><a class="anchor_link" href="./index.html#wrap_a_point">近視所造成的傷害</a></li>
+      <li><a class="anchor_link" href="./index.html#wrap_b_point">近視怎麼產生</a></li>
+      <li><a class="anchor_link" href="./index.html#wrap_c_point">管理近視很重要</a></li>
+      <!-- <li><a class="anchor_link" href="./index.html#wrap_a_point">近視衛教資訊</a></li> -->
+      <!-- <li><a href="#">聽聽醫生怎麼說</a></li> -->
+      <!-- <li><a href="#">媒體報導</a></li> -->
+      <!-- <li><a href="#">影音專區</a></li> -->
+      <!-- <li><a href="#">使用者分享</a></li> -->
+      <li><a href="map.html">諮詢點查詢</a></li>
+      <li><a href="../design_member/register.html">會員中心</a></li>
+    </ul>
+    <ul class="nav_scial">
+      <li><a href="#" class="icon_print">print</a></li>
+      <li><a href="#" class="icon_mail">mail</a></li>
+      <li><a href="#" class="icon_facebook">facebook</a></li>
+      <li><a href="#" class="icon_line">line</a></li>
+    </ul>
+</div></nav>
+<div class="nav_open for_mobile">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<section class="map_box">
+  <div class="map_inner">
+    <div class="map_l">
+      <div class="map_search">
+        <button type="button" name="current_location" class="map_btn btn_current_location">以目前位置定位</button>
+        <small>或，以下搜尋</small>
+        <label class="map_btn">選擇地區</label>
+        <div class="input_group">
+          <select name="area" class="form_control">
+            <option value="">縣市區域</option>
+            <option value="北區">北區</option>
+            <option value="中區">中區</option>
+            <option value="南區">南區</option>
+          </select>
+        </div>
+        <div class="input_group">
+          <input type="text" name="address" class="form_control" placeholder="輸入地址">
+        </div>
+      </div>
+      <div class="map_list_box">
+        <div class="title">在您附近有以下的診所</div>
+        <ul class="map_list">
+          <li class="item">
+            <h5 class="name">診所名稱</h5>
+            <div class="address">台北市大安區安和路二段20號</div>
+            <div class="tel">02-27090099</div>
+          </li>
+          <li class="item">
+            <h5 class="name">診所名稱</h5>
+            <div class="address">台北市大安區安和路二段20號</div>
+            <div class="tel">02-27090099</div>
+          </li>
+          <li class="item">
+            <h5 class="name">診所名稱</h5>
+            <div class="address">台北市大安區安和路二段20號</div>
+            <div class="tel">02-27090099</div>
+          </li>
+          <li class="item">
+            <h5 class="name">診所名稱</h5>
+            <div class="address">台北市大安區安和路二段20號</div>
+            <div class="tel">02-27090099</div>
+          </li>
+          <li class="item">
+            <h5 class="name">診所名稱</h5>
+            <div class="address">台北市大安區安和路二段20號</div>
+            <div class="tel">02-27090099</div>
+          </li>
+          <li class="item">
+            <h5 class="name">診所名稱</h5>
+            <div class="address">台北市大安區安和路二段20號</div>
+            <div class="tel">02-27090099</div>
+          </li>
+          <li class="item">
+            <h5 class="name">診所名稱</h5>
+            <div class="address">台北市大安區安和路二段20號</div>
+            <div class="tel">02-27090099</div>
+          </li>
+          <li class="item">
+            <h5 class="name">診所名稱</h5>
+            <div class="address">台北市大安區安和路二段20號</div>
+            <div class="tel">02-27090099</div>
+          </li>
+          <li class="item">
+            <h5 class="name">診所名稱</h5>
+            <div class="address">台北市大安區安和路二段20號</div>
+            <div class="tel">02-27090099</div>
+          </li>
+          <li class="item">
+            <h5 class="name">診所名稱</h5>
+            <div class="address">台北市大安區安和路二段20號</div>
+            <div class="tel">02-27090099</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="map_r">
+      <div id="map"></div>
+    </div>
+    <div class="map_nav for_mobile">
+      <div class="map_nav_list active">地圖列表</div>
+      <div class="map_nav_map">地圖呈現</div>
+    </div>
+  </div>
+</section>
+
+<!--表尾-->
+<footer class="footer">
+  <div class="footerlink">
+    <div class="linkleft">
+      <h2>快速連結</h2>
+      <ul>
+        <li><a href="./index.html">首頁</a></li>
+        <li><a href="map.html">諮詢據點</a></li>
+        <!-- <li><a href="#">關於近視</a></li> -->
+        <!-- <li><a href="#">產品介紹</a></li> -->
+        <!-- <li><a href="#">報導與專欄</a></li> -->
+      </ul>
+    </div>
+    <div class="linkright">
+      <h2><span>關於近視</span></h2>
+      <ul>
+        <li><a class="anchor_link" href="./index.html#content_point">台灣近視狂潮來臨</a></li>
+        <li><a class="anchor_link" href="./index.html#wrap_a_point">近視所造成的傷害</a></li>
+        <li><a class="anchor_link" href="./index.html#wrap_b_point">近視怎麼產生</a></li>
+        <li><a class="anchor_link" href="./index.html#wrap_c_point">管理近視很重要</a></li>
+        <!-- <li><a href="#">為什麼控制近視是重要的？</a></li>
+        <li><a href="#">需要注意哪些事項？</a></li> -->
+      </ul>
+    </div>
+    <div class="footer_icon">
+      <a href="#" class="icon_print">print</a>
+      <a href="#" class="icon_mail">mail</a>
+      <a href="#" class="icon_facebook">facebook</a>
+      <a href="#" class="icon_line">line</a>
+    </div>
+  </div>
+  <p class="copyright">Copyright 2020 Child Myopia.All Right Reserved.</p>
+</footer>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYK7tectohprOKfNk8COt4rNCmtE8z3Kg&callback=initMap" async="" defer=""></script>
+<script>
+  // 地圖搜尋結果demo
+  var map;
+  var markers = [];
+  var position = [
+    { label: 'A', lat: 25.043786, lng: 121.5466205 },
+    { label: 'B', lat: 25.0290144, lng: 121.5491778 },
+    { label: 'C', lat: 25.0353282, lng: 121.5325105 }
+  ];
+
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: {
+        lat: 25.0385286,
+        lng: 121.5467956
+      },
+      zoomControlOptions:{position:google.maps.ControlPosition.RIGHT_CENTER}
+    });
+
+    for (var i = 0; i < position.length; i++) {
+      addMarker(i);
+    }
+  }
+
+  function addMarker(e) {
+    markers[e] = new google.maps.Marker({
+      position: {
+        lat: position[e].lat,
+        lng: position[e].lng
+      },
+      map: map,
+      icon: 'assets/images/marker.png',
+      animation: google.maps.Animation.DROP, // 地圖標記載入掉落動態
+    });
+  }
+</script>
+<script src="js/jquery.js"></script>
+<script src="js/TweenMax.js"></script>
+<script src="js/ScrollToPlugin.js"></script>
+<script src="js/jquery.countTo.js"></script>
+<script src="js/scroll.listener.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
