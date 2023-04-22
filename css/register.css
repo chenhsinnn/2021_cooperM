@@ -1,0 +1,237 @@
+/*通用*/
+.content-wrapper {
+  min-height: calc(106vh - 84px - 310px);
+}
+.main-panel {
+  background: url(../images/e.png) repeat #FDE4CE;
+}
+.form-control.form-control-lg, .form-control-lg.asColorPicker-input, .dataTables_wrapper select.form-control-lg, .jsgrid .jsgrid-table .jsgrid-filter-row input.form-control-lg[type=text],
+.jsgrid .jsgrid-table .jsgrid-filter-row select.form-control-lg, .jsgrid .jsgrid-table .jsgrid-filter-row input.form-control-lg[type=number], .select2-container--default .form-control-lg.select2-selection--single, .select2-container--default .select2-selection--single .form-control-lg.select2-search__field, .form-control-lg.typeahead,
+.form-control-lg.tt-query,
+.form-control-lg.tt-hint  {
+  padding: 0.3rem .8rem;
+}
+.register_pt {
+  padding: 134px 0 50px 0;
+}
+.register_title span {
+  color: #F36117;
+  font-size: 1.65rem;
+}
+.text_color {
+  color: #ff8344;
+}
+:root,
+body {
+  color: #4d4d4d;
+}
+.search_btn {
+  background-color: #F36117;
+  color: #fff;
+}
+.search_btn_1 {
+  border-radius: .2rem 0 0 .2rem !important;
+}
+.search_btn_2 {
+  border-radius: 0 .2rem .2rem 0 !important;
+}
+.search_btn_border {
+  border-color: #F36117;
+}
+.page-body-wrapper.full-page-wrapper .content-wrapper {
+  height: 120vh;
+}
+.register_window_text_size {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  width: 100%;
+}
+
+/*按鈕*/
+.register_btn {
+  color: #fff;
+  font-size: 1rem !important ;
+  letter-spacing: .5rem;
+  background-color: #F36117;
+  border-color: #F36117;
+  padding: 0.66rem 1.375rem 0.66rem 1.875rem;
+}
+.register_btn:hover {
+  background-color: #fdb591;
+  border-color:  #fdb591;
+}
+.register_btn:focus {
+  background-color: #fdb591;
+  border-color:  #fdb591;
+}
+.register_btn.disabled, .register_btn:disabled {
+  color: #fff;
+  background-color:  #fdb591;
+  border-color:  #fdb591;
+} 
+.register_btn:not(:disabled):not(.disabled):active, .register_btn:not(:disabled):not(.disabled).active,
+.show > .register_btn.dropdown-toggle {
+  color: #fff;
+  background-color:  #fdb591;
+  border-color:  #fdb591;
+}
+.register_btn:not(:disabled):not(.disabled):active:focus, .register_btn:not(:disabled):not(.disabled).active:focus,
+.show > .register_btn.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem  #fdb591;
+}
+
+/*按鈕下面的按鈕*/
+.login_btn a {
+  color: #F36117;
+}
+.login_btn a:hover {
+  color: #fdb591;
+}
+.login_btn a:active {
+  color: #fdb591;
+}
+.login_btn a:focus {
+  color: #fdb591;
+}
+.form-control:active {
+  border-color: #F36117;
+}
+.form-control:focus {
+  border-color: #F36117;
+}
+
+/*小標題icon*/
+.title_small_box {
+  position: relative;
+  padding: 8px 0 0 35px;
+}
+.log_in_box {
+  position: relative;
+  padding: 16px 0 0 50px;
+}
+.title_small::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  background: url(../images/pen.png) center;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+}
+
+.log_in::before {
+  background: url(../images/glasses.png) center;
+  background-size: cover;
+  top: 12px;
+  left: 7px;
+  width: 36px;
+  height: 25px;
+}
+
+/*選單預設樣式*/
+.auth .auth-form-light select {
+  color:#495057;
+  font-weight: normal;
+  font-size: 1rem;
+}
+.form-control::-webkit-input-placeholder {
+  color: #a7a7a7;
+  opacity: 1;
+  font-weight: normal;
+  font-size: 1rem;
+}
+.form-control::-moz-placeholder {
+  color: #a7a7a7;
+  opacity: 1;
+  font-weight: normal;
+  font-size: 1rem;
+}
+.form-control:-ms-input-placeholder {
+  color: #a7a7a7;
+  opacity: 1;
+  font-weight: normal;
+  font-size: 1rem;
+}
+.form-control::-ms-input-placeholder {
+  color: #a7a7a7;
+  font-weight: normal;
+  opacity: 1;
+  font-size: 1rem;
+}
+.form-control::placeholder {
+  color: #a7a7a7;
+  opacity: 1;
+  font-weight: normal;
+  font-size: 1rem;
+}
+.form-control {
+  font-size: 1rem;
+  line-height: 1.38;
+}
+.form-control-plaintext {
+  font-size: 1rem;
+  padding: 0.56rem 0.75rem;
+}
+/*條款*/
+.raw {
+  color: #007bff;
+  font-size: .819rem;
+}
+.raw:hover {
+  color: #fdb591;
+}
+.terms_inner {
+  padding: 5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+.terms_title {
+  color: #F36117;
+}
+
+/* 修改密碼頁 */
+.icon_box_middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*信箱確認*/
+.mail {
+  display: block;
+  font-size: 1.5rem;
+}
+
+
+/* 註冊頁打勾 */
+.form-check .form-check-label input[type="checkbox"] + .input-helper:before {
+  border: 2px solid #007bff;
+}
+.form-check .form-check-label input[type="checkbox"]:checked + .input-helper:before {
+  background:  #007bff;
+}
+
+@media (max-width:1200px) {
+  .terms_inner {
+    padding: 3rem;
+  }
+}
+@media (max-width:991.98px) {
+  .register_pt {
+    padding: 56px 0 50px 0;
+  }
+}
+@media (max-width: 768px){
+  .main-panel {
+    padding-top: 7.8125vw;
+  }
+  .register_pt {
+    padding-top: 12.239577vw;
+    padding-bottom: 6.51041vw;
+  }
+  .terms_inner {
+    padding: 2rem;
+  }
+}

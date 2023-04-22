@@ -1,0 +1,155 @@
+/* .list_title_box {
+  position: relative;
+  margin: .5rem 0;
+}
+.list_title_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: 2rem;
+} */
+/* .list_title_inner::before {
+  position: absolute;
+  top: .1rem;
+  left: -.7rem;
+  content: "";
+  background-image: url(../images/doctor.png);
+  width: 26px;
+  height: 18px;
+} */
+/* .list_title {
+  color: #F36117;
+} */
+/* .list_title_arrow h4::before {
+  position: absolute;
+  top: .1rem;
+  left: 6.45rem;
+  content: "";
+  background-image: url(../images/arrow_right.png);
+  width: 11px;
+  height: 15px;
+} */
+.record_maintitle {
+  /* position: relative; */
+  border-bottom: 1px solid #fd7530;
+}
+.record_maintitle h4 {
+  /* position: absolute;
+  top:-.5rem;
+  left:-5rem; */
+  padding: .8rem 1.5rem;
+  background-color: #fca980;
+  color:#fff;
+  letter-spacing: .2rem;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+.record_title_size label ,.select_text_style {
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  line-height: 1.5;
+  color: #797979;
+}
+.label_else_text {
+  padding:0 1rem 0 2rem;
+}
+.label_else_text_unit {
+  padding: 0 .5rem;
+}
+.form-check-input {
+  margin-top: 0.62rem;
+  margin-left: -1.5rem;
+}
+.record_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-top: 1px solid  #f36117; */
+}
+.record_btn a {
+  letter-spacing: .5rem;
+  text-align: center;
+}
+
+
+
+
+
+/* 結案報告 */
+.bgcolor_black h4 {
+  background-color: rgb(62, 75, 255);
+  color: #fff;
+}
+.report_text {
+  font-size: .5rem;
+  letter-spacing: .1rem;
+  line-height: 1.5;
+  color: #e64833e1;
+  margin-bottom: 1rem;
+}
+.report_border {
+  border: 3px solid #686767;
+}
+.report_maintitle {
+  border-bottom: 1px solid #686767;
+}
+.report_maintitle h4 {
+  background-color: #686767;
+}
+.label_else_text_2 {
+  padding:0 1rem 0 1rem;
+}
+.form-group_box {
+  margin-bottom: .7rem;
+}
+
+
+/* 診療紀錄 */
+.search_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.search_box_inner_right {
+  display: flex;
+  align-items: center;
+}
+.table th {
+  padding: 0.5rem .5rem;
+}
+
+.table td {
+  padding: 0.5rem .5rem;
+}
+/* 彈出視窗 */
+.modal .modal-dialog .modal-content .modal-header .close span {
+  color: #F36117;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: .3rem;
+}
+.modal-header {
+  border-bottom: 0;
+}
+.close {
+  opacity: 1;
+}
+.record_close_btn {
+  font-size: 1.2rem  !important ;
+}
+.btn_records:hover {
+  background-color: #fdb591;
+  color: #fff;
+}
+.btn_close {
+  color: #212529;
+  background-color: #dfe8fb;
+  border-color: #dfe8fb;
+}
+.check_window_text {
+  font-size: 1.3rem;
+  letter-spacing: .1rem;
+  line-height: 1.5
+}

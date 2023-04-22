@@ -1,0 +1,2659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>彈出視窗統整</title>
+  <link rel="stylesheet" href="css/daterangepicker.css">
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <link rel="stylesheet" href="css/regular.css">
+  <link rel="stylesheet" href="css/solid.css">
+  <link rel="stylesheet" href="css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../design/css/nav.css">
+  <link rel="stylesheet" href="../design/css/footer.css">
+  <link rel="stylesheet" href="../design/css/header.css">
+  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="css/member_record.css">
+  <link rel="stylesheet" href="css/member.css">
+  <!-- plugins:css -->
+  <!-- <link rel="stylesheet" href="../../../../vendors/flag-icon-css/css/flag-icon.min.css"> -->
+  <!-- <link rel="stylesheet" href="css/flag-icon.min.css">
+  <link rel="stylesheet" href="../design/css/header.css">
+  <link rel="stylesheet" href="css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/simple-line-icons.css">
+  <link rel="stylesheet" href="css/feather.css">
+  <link rel="stylesheet" href="css/vendor.bundle.base.css"> -->
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <!-- <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/member.css">
+  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="css/member_record.css">
+  <link rel="stylesheet" href="scss/_icons.scss"> -->
+  <!-- endinject -->
+  <!-- <link rel="shortcut icon" href="../../../../images/favicon.png" /> -->
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+  <script type="text/javascript" src="https://awio.iljmp.com/improvely.js" async=""></script><script type="text/javascript" src="https://pulse.w3counter.com/pulse.js?id=90840" async=""></script><script type="text/javascript" src="https://www.w3counter.com/track/pv?id=90840&amp;userAgent=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_5)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F87.0.4280.88%20Safari%2F537.36&amp;webpageName=Date%20Range%20Picker%20%E2%80%94%20JavaScript%20Date%20%26%20Time%20Picker%20Library&amp;ref=&amp;url=http%3A%2F%2Fwww.daterangepicker.com%2F%23example5&amp;width=2048&amp;height=1152&amp;rand=141" async=""></script><script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script> -->
+</head>
+<body>
+  <!-- 選單 -->
+  
+  <!-- 診療紀錄 -->
+  <div class="container">
+    <div class="member_page">
+      <ul class="patient_profile">
+        <li class="d-inline-block mr-2">
+            <button type="button" class="btn btn-lg font-weight-medium auth-form-btn btn_patient_profile btn_records" data-toggle="modal" data-target="#patient_profile">新增初診</button>
+        </li>
+        <li class="d-inline-block m-2">
+            <button type="button" class="btn btn-lg font-weight-medium auth-form-btn btn_patient_profile btn_records" data-toggle="modal" data-target="#patient_profile_edit"><i class="fa fa-pencil btn-icon-prepend"></i>編輯病例</button>
+        </li>
+        <li class="d-inline-block m-2">
+          <button type="button" class="btn btn-lg font-weight-medium auth-form-btn btn_patient_profile btn_records" data-toggle="modal" data-target="#member_record">填寫看診紀錄（初診問卷）</button>
+        </li>
+        <li class="d-inline-block m-2">
+          <button type="button" class="btn btn-lg font-weight-medium auth-form-btn btn_patient_profile btn_records" data-toggle="modal" data-target="#member_record_revise">確認看診紀錄（初診問卷）</button>
+        </li>
+        <li class="d-inline-block m-2">
+          <button type="button" class="btn btn-icon-text btn_patient_profile btn_records" data-toggle="modal" data-target="#member_record_view">
+          查看看診紀錄（初診問卷）
+          </button>
+        </li>
+        <li class="d-inline-block m-2"> 
+          <button type="button" class="btn btn-icon-text btn_patient_profile btn_records" data-toggle="modal" data-target="#member_record2">                   
+            填寫回診紀錄
+            </button> 
+        </li>
+        <li class="d-inline-block m-2"> 
+          <button type="button" class="btn btn-icon-text btn_patient_profile btn_records" data-toggle="modal" data-target="#member_record2_revise">                                確認回診紀錄
+            </button> 
+        </li>
+        <li class="d-inline-block m-2"> 
+          <button type="button" class="btn btn-icon-text btn_patient_profile btn_records" data-toggle="modal" data-target="#member_record2_view">                                查看回診紀錄
+            </button> 
+        </li>
+        <li class="d-inline-block m-2">
+          <button type="button" class="btn btn-icon-text btn_patient_profile btn_records"  data-toggle="modal" data-target="#member_report">
+          填寫結案報告
+          </button>
+        </li>
+        <li class="d-inline-block m-2">
+          <button type="button" class="btn btn-icon-text btn_patient_profile btn_records"  data-toggle="modal" data-target="#member_report_revise">
+        確認結案報告
+          </button>
+        </li>
+        <li class="d-inline-block m-2">
+          <button type="button" class="btn btn-icon-text btn_patient_profile btn_records"  data-toggle="modal" data-target="#member_report_view">
+        查看結案報告
+          </button>
+        </li>
+        <!-- <li class="d-inline-block m-2">
+          <button type="button" class="btn btn-icon-text btn_patient_profile btn_records"  data-toggle="modal" data-target="#build_record_check">
+          （警告）確認建立資料
+          </button>
+        </li>
+        <li class="d-inline-block m-2">
+          <button type="button" class="btn btn-icon-text btn_patient_profile btn_records"  data-toggle="modal" data-target="#member_report_warn">
+          （警告）確認建立結案報告
+          </button>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- 彈出視窗 -->
+  <!-- 初診基本資料 -->
+  <div class="modal fade" id="patient_profile" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content patient_profile">
+        <div class="patient_profile_top">
+          <button type="button" class="close close_btn" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+          <h3 class="font-weight-normal text-center mb-0">
+            <span class="patient_profile_title">新增基本資料</span>
+          </h3>
+        </div>
+        <div class="text-left pt-3 pl-4 pr-4 pb-4 patient_profile_inner">
+          <form class="pt-3">
+            <div class="form-group">
+              <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="請輸入姓名">
+            </div>
+            <div class="form-group">
+              <select class="form-control form-control-lg form-control-select" id="gender" name="gender">
+                <option value="">請選擇性別</option>
+                <option value="1">男生</option>
+                <option value="2">女生</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" class="form-control form-control-lg" id="birthday" name="birthday">
+                <div class="input-group-append">
+                  <span class="input-group-text select_text_style label_else_text_unit"><i class="fa fa-calendar"></i></span>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="form-group">
+              <input type="text" class="form-control form-control-lg" id="id_number" name="id_number" placeholder="請輸入身分證字號">
+            </div> -->
+            <div class="form-group">
+              <input type="tel" class="form-control form-control-lg" id="phone" name="phone" placeholder="請輸入手機">
+            </div>
+            <div class="mt-4">
+              <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn register_btn" href="records_file_page.html">確定新增</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 病例資料 -->
+  <div class="modal fade" id="patient_profile_edit" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content patient_profile">
+        <div class="patient_profile_top">
+          <button type="button" class="close close_btn" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+          <h3 class="font-weight-normal text-center mb-0">
+            <span class="patient_profile_title">編輯基本資料</span>
+          </h3>
+        </div>
+        <div class="text-left pt-3 pl-4 pr-4 pb-4 patient_profile_inner">
+          <label class="form-check-label font-weight-bold mb-0 patient_number">病例：1</label>
+          <form class="pt-3">
+            <div class="form-group">
+              <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="請輸入姓名">
+            </div>
+            <div class="form-group">
+              <select class="form-control form-control-lg form-control-select" id="gender" name="gender">
+                <option value="">請選擇性別</option>
+                <option value="1">男生</option>
+                <option value="2">女生</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" class="form-control form-control-lg" id="birthday" name="birthday">
+                <div class="input-group-append">
+                  <span class="input-group-text select_text_style label_else_text_unit"><i class="fa fa-calendar"></i></span>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="form-group">
+              <input type="text" class="form-control form-control-lg" id="id_number" name="id_number" placeholder="請輸入身分證字號">
+            </div> -->
+            <div class="form-group">
+              <input type="tel" class="form-control form-control-lg" id="phone" name="phone" placeholder="請輸入手機">
+            </div>
+            <div class="mt-4">
+              <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn register_btn" href="records_file_page.html">確定修改</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- （初診）填寫看診紀錄 -->
+  <div class="modal fade" id="member_record" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content patient_profile">
+        <div class="card record_border">
+          <button type="button" class="close close_btn" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">邁視兒每日拋軟式隱形眼鏡視力矯正追蹤問卷 - 初診</h2>
+            <div class="record_maintitle">
+              <h4 class="mb-0 card-title">01/看診資料</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pt-3 pb-3">
+                <div class="col-lg-7">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-5 col-md-12 profile_edit_text mb-992">驗配院所：</label>
+                    <div class="col-lg-7 col-md-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">大學眼科公館店</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-6 col-md-12 profile_edit_text mb-992">看診者：</label>
+                    <div class="col-lg-6 col-md-12">
+                      <label class="form-check-label font-weight-normal mb-0">林大華</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 col-md-12 profile_edit_text mb-992">檢查日期：</label>
+                    <div class="col-lg-6 col-md-12">
+                      <div class="input-group">
+                        <label class="form-check-label font-weight-normal mb-0">2020-12-21</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_maintitle">
+              <h4 class="mb-0 card-title">02/檢查結果</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pt-3 pb-3">
+                <div class="col-12">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-2 profile_edit_text mb-992">裸眼視力：</label>
+                    <div class="col-lg-5 mb-992">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">左眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="inaked_eyesight_left" type="text" placeholder="請輸入裸眼視力，ex. 1.0">
+                        <!-- <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">度</span>
+                        </div> -->
+                      </div>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">右眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="inaked_eyesight_right" type="text" placeholder="請輸入裸眼視力，ex. 1.0">
+                        <!-- <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">度</span>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-2 profile_edit_text mb-992">近視度數：</label>
+                    <div class="col-lg-5 mb-992">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">左眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="myopia_left" type="text" placeholder="請輸入近視度數，ex. 100">
+                        <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">度</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">右眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="myopia_right" type="text" placeholder="請輸入近視度數，ex. 100">
+                        <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">度</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-2 profile_edit_text mb-992">散光度數：</label>
+                    <div class="col-lg-5 mb-992">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">左眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="astigmatism_left" type="text" placeholder="請輸入散光度數，ex. 100">
+                        <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">度</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">右眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="astigmatism_right" type="text" placeholder="請輸入散光度數，ex. 100">
+                        <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">度</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-2 profile_edit_text mb-992">角度：</label>
+                    <div class="col-lg-5 mb-992">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">左眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="degrees_left" type="text" placeholder="請輸入角度，ex. 155">
+                        <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">度</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">右眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="degrees_right" type="text" placeholder="請輸入角度，ex. 155">
+                        <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">度</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-2 profile_edit_text mb-992">矯正視力：</label>
+                    <div class="col-lg-5 mb-992">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">左眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="corrected_visual_left" type="text" placeholder="請輸入矯正視力，ex. 1.0">
+                        <!-- <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">度</span>
+                        </div> -->
+                      </div>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">右眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="corrected_visual_right" type="text" placeholder="請輸入矯正視力，ex. 1.0">
+                        <!-- <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">度</span>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-2 profile_edit_text mb-992">眼軸長：</label>
+                    <div class="col-lg-5 mb-992">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">左眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="axial_length_left" type="text" placeholder="請輸入眼軸長，ex. 24.7">
+                        <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">mm</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">右眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="axial_length_right" type="text" placeholder="請輸入眼軸長，ex. 24.7">
+                        <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">mm</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-5 profile_edit_text mb-992">本次診斷之後是否搭配長效散瞳劑使用？</label>
+                    <div class="col-4 mb-992">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text form-check-label label_else_text">
+                            <input type="radio" class="form-check-input" name="mydriatic" value="1"> 是
+                          </label>
+                        </div>
+                        <input type="text" class="form-control" name="mydriatic_percentage" placeholder="請輸入長效散瞳劑濃度">
+                        <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <label class="col-3 form-check-label font-weight-normal">
+                      <input type="radio" name="mydriatic" value="0"> 否
+                    </label>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 mb-3 profile_edit_text mb-992">備註：</label>
+                    <div class="col-lg-12 mb-992">
+                      <textarea class="form-control" rows="8" name="remark" placeholder="請輸入備註"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_maintitle">
+              <h4 class="mb-0 card-title">03/驗配前調查</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">1.接受邁視兒矯正之前是否有使用過其他近視控制與矯正之方法？</label>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="other_correction" value="1"> 完全沒有矯治過
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="other_correction" value="2"> 一般框架眼鏡
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="other_correction" value="3"> 學童專用鏡片
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="other_correction" value="4"> 長效散瞳劑(Atropine)
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text form-check-label label_else_text">
+                          <input type="radio" class="form-check-input" name="other_correction" value="5"> 角膜塑型片，已停戴
+                        </label>
+                      </div>
+                      <input type="text" class="form-control" name="other_correction_discontinued" placeholder="請輸入幾週">
+                      <div class="input-group-append">
+                        <span class="input-group-text select_text_style label_else_text_unit">週</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">2.平均每日睡眠時間？</label>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="sleep_time" value="1"> 不足 6 小時
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="sleep_time" value="2"> 6-7 小時
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="sleep_time" value="3"> 7-9 小時
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="sleep_time" value="4"> 9 小時以上
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">3.平均每日戶外活動時間？</label>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="outdoor_time" value="1"> 不足 1 小時
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="outdoor_time" value="2"> 1-2 小時
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="outdoor_time" value="3"> 2-3 小時
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="outdoor_time" value="4"> 3 小時以上
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">4.平均每日 3C 產品使用時間？</label>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="usage_3c_time" value="1"> 從未使用過
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="usage_3c_time" value="2"> 不足 1 小時
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="usage_3c_time" value="3"> 1-2 小時
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="usage_3c_time" value="4"> 2 小時以上
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">5.哪些優點是您選擇邁視兒矯正的原因？（可複選）</label>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="checkbox" name="misight_advantage[]" value="1"> 不用帶框架眼鏡
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="checkbox" name="misight_advantage[]" value="2"> 每日拋、不用清洗
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="checkbox" name="misight_advantage[]" value="3"> 異物感低
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text form-check-label label_else_text">
+                          <input type="checkbox" class="form-check-input" name="misight_advantage[]" value="4"> 其他
+                        </label>
+                      </div>
+                      <input type="text" class="form-control" name="misight_advantage_other" placeholder="請輸入其他說明">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_btn pt-4">
+              <button class="btn btn-primary font-weight-medium auth-form-btn register_btn" data-toggle="modal" data-target="#">預覽紀錄</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- （初診）確認看診紀錄 -->
+  <div class="modal fade" id="member_record_revise" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content patient_profile">
+        <div class="card record_border">
+          <button type="button" class="close close_btn" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">邁視兒每日拋軟式隱形眼鏡視力矯正追蹤問卷 - 初診</h2>
+            <div class="record_maintitle">
+              <h4 class="mb-0 card-title">01/看診資料</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pt-3 pb-3">
+                <div class="col-lg-7">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-5 col-md-12 profile_edit_text mb-992">驗配院所：</label>
+                    <div class="col-lg-7 col-md-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">大學眼科公館店</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-6 col-md-12 profile_edit_text mb-992">看診者：</label>
+                    <div class="col-lg-6 col-md-12">
+                      <label class="form-check-label font-weight-normal mb-0">林大華</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 col-md-12 profile_edit_text mb-992">檢查日期：</label>
+                    <div class="col-lg-7 col-md-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">2020/11/25</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_maintitle">
+              <h4 class="mb-0 card-title">02/檢查結果</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pt-3 pb-3">
+                <div class="col-12">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">裸眼視力：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">近視度數：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">散光度數：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">角度：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">矯正視力：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">眼軸長：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-5 profile_edit_text mb-2">本次診斷之後是否搭配長效散瞳劑使用？</label>
+                    <div class="col-lg-7">
+                      <label class="form-check-label font-weight-normal">是</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">備註：</label>
+                    <div class="col-lg-9 mb-992">
+                      <label class="form-check-label font-weight-normal">無</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_maintitle">
+              <h4 class="mb-0 card-title">03/驗配前調查</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">1.接受邁視兒矯正之前是否有使用過其他近視控制與矯正之方法？
+                  </label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">完全沒有矯治過</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">2.平均每日睡眠時間?
+                  </label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">不足6小時</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">3.平均每日戶外活動時間?
+                  </label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">1-2小時</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">4.平均每日 3C 產品使用時間？
+                  </label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">從未使用過</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">5.哪些優點是您選擇邁視兒矯正的原因？（可複選）
+                  </label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">不用帶框架眼鏡、異物感低</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_btn pt-4">
+              <button class="btn btn-primary font-weight-medium auth-form-btn register_btn m-1" data-toggle="modal" data-target="#">返回編輯</button>
+              <button class="btn btn-primary font-weight-medium auth-form-btn register_btn m-1" data-toggle="modal" data-target="#">確定新增</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- （初診）查看看診紀錄 -->
+  <div class="modal fade" id="member_record_view" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content patient_profile">
+        <div class="card record_border">
+          <button type="button" class="close close_btn" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">邁視兒每日拋軟式隱形眼鏡視力矯正追蹤問卷 - 初診</h2>
+            <div class="record_maintitle">
+              <h4 class="mb-0 card-title">01/看診資料</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pt-3 pb-3">
+                <div class="col-lg-7">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-5 col-md-12 profile_edit_text mb-992">驗配院所：</label>
+                    <div class="col-lg-7 col-md-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">大學眼科公館店</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-6 col-md-12 profile_edit_text mb-992">看診者：</label>
+                    <div class="col-lg-6 col-md-12">
+                      <label class="form-check-label font-weight-normal mb-0">林大華</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 col-md-12 profile_edit_text mb-992">檢查日期：</label>
+                    <div class="col-lg-7 col-md-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">2020/11/25</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_maintitle">
+              <h4 class="mb-0 card-title">02/檢查結果</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pt-3 pb-3">
+                <div class="col-12">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">裸眼視力：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">近視度數：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">散光度數：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">角度：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">矯正視力：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">眼軸長：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-5 profile_edit_text mb-2">本次診斷之後是否搭配長效散瞳劑使用？</label>
+                    <div class="col-lg-7">
+                      <label class="form-check-label font-weight-normal">是</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">備註：</label>
+                    <div class="col-lg-9 mb-992">
+                      <label class="form-check-label font-weight-normal">無</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_maintitle">
+              <h4 class="mb-0 card-title">03/驗配前調查</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">1.接受邁視兒矯正之前是否有使用過其他近視控制與矯正之方法？
+                  </label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">完全沒有矯治過</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">2.平均每日睡眠時間？
+                  </label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">不足6小時</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">3.平均每日戶外活動時間？
+                  </label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">1-2小時</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">4.平均每日 3C 產品使用時間？
+                  </label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">從未使用過</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">5.哪些優點是您選擇邁視兒矯正的原因？（可複選）
+                  </label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">不用帶框架眼鏡、異物感低</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_btn pt-4">
+              <button class="btn btn-primary font-weight-medium auth-form-btn register_btn" data-toggle="modal" data-target="#">確認</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- （回診）填寫看診紀錄 -->
+  <div class="modal fade" id="member_record2" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content patient_profile">
+        <div class="card record_border">
+          <button type="button" class="close close_btn" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">邁視兒每日拋軟式隱形眼鏡視力矯正追蹤問卷 - 回診</h2>
+            <div class="record_maintitle">
+              <h4 class="mb-0 card-title">01/看診資料</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pt-3 pb-3">
+                <div class="col-lg-7">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-5 col-md-12 profile_edit_text mb-992">驗配院所：</label>
+                    <div class="col-lg-7 col-md-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">大學眼科公館店</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-6 col-md-12 profile_edit_text mb-992">看診者：</label>
+                    <div class="col-lg-6 col-md-12">
+                      <label class="form-check-label font-weight-normal mb-0">林大華</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 col-md-12 profile_edit_text mb-992">檢查日期：</label>
+                    <div class="col-lg-6 col-md-12">
+                      <div class="input-group">
+                        <label class="form-check-label font-weight-normal mb-0">2020-12-21</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_maintitle">
+              <h4 class="mb-0 card-title">02/檢查結果</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pt-3 pb-3">
+                <div class="col-12">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-2 profile_edit_text mb-992">裸眼視力：</label>
+                    <div class="col-lg-5 mb-992">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">左眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="inaked_eyesight_left" type="text" placeholder="請輸入裸眼視力，ex. 1.0">
+                        <!-- <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">度</span>
+                        </div> -->
+                      </div>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">右眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="inaked_eyesight_right" type="text" placeholder="請輸入裸眼視力，ex. 1.0">
+                        <!-- <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">度</span>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-2 profile_edit_text mb-992">近視度數：</label>
+                    <div class="col-lg-5 mb-992">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">左眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="myopia_left" type="text" placeholder="請輸入近視度數，ex. 100">
+                        <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">度</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">右眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="myopia_right" type="text" placeholder="請輸入近視度數，ex. 100">
+                        <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">度</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-2 profile_edit_text mb-992">散光度數：</label>
+                    <div class="col-lg-5 mb-992">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">左眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="astigmatism_left" type="text" placeholder="請輸入散光度數，ex. 100">
+                        <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">度</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">右眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="astigmatism_right" type="text" placeholder="請輸入散光度數，ex. 100">
+                        <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">度</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-2 profile_edit_text mb-992">角度：</label>
+                    <div class="col-lg-5 mb-992">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">左眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="degrees_left" type="text" placeholder="請輸入角度，ex. 155">
+                        <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">度</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">右眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="degrees_right" type="text" placeholder="請輸入角度，ex. 155">
+                        <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">度</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-2 profile_edit_text mb-992">矯正視力：</label>
+                    <div class="col-lg-5 mb-992">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">左眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="corrected_visual_left" type="text" placeholder="請輸入矯正視力，ex. 1.0">
+                        <!-- <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">度</span>
+                        </div> -->
+                      </div>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">右眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="corrected_visual_right" type="text" placeholder="請輸入矯正視力，ex. 1.0">
+                        <!-- <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">度</span>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-2 profile_edit_text mb-992">眼軸長：</label>
+                    <div class="col-lg-5 mb-992">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">左眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="axial_length_left" type="text" placeholder="請輸入眼軸長，ex. 24.7">
+                        <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">mm</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text select_text_style label_else_text_unit">右眼</label>
+                        </div>
+                        <input class="form-control" maxlength="25" name="axial_length_right" type="text" placeholder="請輸入眼軸長，ex. 24.7">
+                        <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">mm</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-5 profile_edit_text mb-992">本次診斷之後是否搭配長效散瞳劑使用？</label>
+                    <div class="col-4 mb-992">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text form-check-label label_else_text">
+                            <input type="radio" class="form-check-input" name="mydriatic" value="1"> 是
+                          </label>
+                        </div>
+                        <input type="text" class="form-control" name="mydriatic_percentage" placeholder="請輸入長效散瞳劑濃度">
+                        <div class="input-group-append">
+                          <span class="input-group-text select_text_style label_else_text_unit">%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <label class="col-3 form-check-label font-weight-normal">
+                      <input type="radio" name="mydriatic" value="0"> 否
+                    </label>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 mb-3 profile_edit_text mb-992">備註：</label>
+                    <div class="col-lg-12 mb-992">
+                      <textarea class="form-control" rows="8" name="remark" placeholder="請輸入備註"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_maintitle">
+              <h4 class="mb-0 card-title">03/生活習慣</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pt-3">
+                <div class="form-group row record_title_size">
+                  <div class="col-lg-12">
+                    <label class="col-form-label profile_edit_text mb-992">1.本週配戴MiSight的時間：</label>
+                  </div>
+                  <div class="col-lg-4 col-md-11 mb-992">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text form-check-label label_else_text_2">每週</label>
+                      </div>
+                      <input type="text" class="form-control" name="misight_week" placeholder="請輸入每週幾次">
+                      <div class="input-group-append">
+                        <span class="input-group-text select_text_style label_else_text_unit">次</span>
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="align-items-center mt-2 none_768">;</h4>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text form-check-label label_else_text_2">平均每日</label>
+                      </div>
+                      <input type="text" class="form-control" name="misight_day" placeholder="請輸入平均每日幾小時">
+                      <div class="input-group-append">
+                        <span class="input-group-text select_text_style label_else_text_unit">小時</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">2.本週是否有持續搭配長效散瞳劑使用？（如未開藥，選遵醫囑使用即可）</label>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="continue_mydriatic" value="1"> 有遵醫囑使用
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="continue_mydriatic" value="2"> 偶爾忘記
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text form-check-label label_else_text">
+                          <input type="radio" class="form-check-input" name="continue_mydriatic" value="3"> 幾乎沒有使用，原因：
+                        </label>
+                      </div>
+                      <input type="text" class="form-control" name="continue_mydriatic_nouse" placeholder="請輸入原因">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">3.平均每日睡眠時間？</label>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="sleep_time" value="1"> 不足 6 小時
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="sleep_time" value="2"> 6-7 小時
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="sleep_time" value="3"> 7-9 小時
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="sleep_time" value="4"> 9 小時以上
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">4.平均每日戶外活動時間？</label>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="outdoor_time" value="1"> 不足 1 小時
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="outdoor_time" value="2"> 1-2 小時
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="outdoor_time" value="3"> 2-3 小時
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="outdoor_time" value="4"> 3 小時以上
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">5.平均每日 3C 產品使用時間？</label>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="usage_3c_time" value="1"> 從未使用過
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="usage_3c_time" value="2"> 不足 1 小時
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="usage_3c_time" value="3"> 1-2 小時
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="radio" name="usage_3c_time" value="4"> 2 小時以上
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">6.本週是否有出現以下情形？（可複選）
+                  </label>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="checkbox" name="situation[]" value="1"> 眼睛刺痛
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="checkbox" name="situation[]" value="2"> 眼睛發炎
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="checkbox" name="situation[]" value="3"> 眼睛發紅
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="checkbox" name="situation[]" value="4"> 眼睛感染
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="checkbox" name="situation[]" value="5"> 眼睛乾燥
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="checkbox" name="situation[]" value="6"> 大量淚液
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="checkbox" name="situation[]" value="7"> 視力受損
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="checkbox" name="situation[]" value="8"> 畏光
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="checkbox" name="situation[]" value="9"> 暈眩
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend record_title_size">
+                        <label class="form-check-label font-weight-normal">
+                          <input type="checkbox" name="situation[]" value="10"> 以上皆無
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-1">
+                    <div class="input-group pl-3 pt-2">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text form-check-label label_else_text">
+                          <input type="checkbox" class="form-check-input" name="situation[]" value="11"> 其他
+                        </label>
+                      </div>
+                      <input type="text" class="form-control" name="situation_other" placeholder="請輸入其他情形">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_btn pt-4">
+              <button class="btn btn-primary font-weight-medium auth-form-btn register_btn" data-toggle="modal" data-target="#">預覽紀錄</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- （回診）確認看診紀錄 -->
+  <div class="modal fade" id="member_record2_revise" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content patient_profile">
+        <div class="card record_border">
+          <button type="button" class="close close_btn" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">邁視兒每日拋軟式隱形眼鏡視力矯正追蹤問卷 - 回診</h2>
+            <div class="record_maintitle">
+              <h4 class="mb-0 card-title">01/看診資料</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pt-3 pb-3">
+                <div class="col-lg-7">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-5 col-md-12 profile_edit_text mb-992">驗配院所：</label>
+                    <div class="col-lg-7 col-md-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">大學眼科公館店</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-6 col-md-12 profile_edit_text mb-992">看診者：</label>
+                    <div class="col-lg-6 col-md-12">
+                      <label class="form-check-label font-weight-normal mb-0">林大華</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 col-md-12 profile_edit_text mb-992">檢查日期：</label>
+                    <div class="col-lg-7 col-md-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">2020/11/25</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_maintitle">
+              <h4 class="mb-0 card-title">02/檢查結果</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pt-3 pb-3">
+                <div class="col-12">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">裸眼視力：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">近視度數：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">散光度數：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">角度：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">矯正視力：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">眼軸長：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-5 profile_edit_text mb-2">本次診斷之後是否搭配長效散瞳劑使用？</label>
+                    <div class="col-lg-7">
+                      <label class="form-check-label font-weight-normal">是</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">備註：</label>
+                    <div class="col-lg-9 mb-992">
+                      <label class="form-check-label font-weight-normal">無</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_maintitle">
+              <h4 class="mb-0 card-title">03/生活習慣</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">1.本週配戴MiSight的時間：
+                  </label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">每週2次；平均每日2小時</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">2.本週是否有持續搭配長效散瞳劑使用？（如未開藥，選遵醫囑使用即可）
+                  </label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">偶爾忘記</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">3.平均每日睡眠時間？
+                  </label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">不足6小時</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">4.平均每日戶外活動時間？
+                  </label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">1-2小時</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">5.平均每日 3C 產品使用時間？</label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">從未使用過</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">6.本週是否有出現以下情形？（可複選）</label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">眼睛刺痛、眼睛刺痛、眼睛發炎、暈眩</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_btn pt-4">
+              <button class="btn btn-primary font-weight-medium auth-form-btn register_btn m-1" data-toggle="modal" data-target="#">返回編輯</button>
+              <button class="btn btn-primary font-weight-medium auth-form-btn register_btn m-1" data-toggle="modal" data-target="#">確定新增</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- （回診）查看看診紀錄 -->
+  <div class="modal fade" id="member_record2_view" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content patient_profile">
+        <div class="card record_border">
+          <button type="button" class="close close_btn" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">邁視兒每日拋軟式隱形眼鏡視力矯正追蹤問卷 - 回診</h2>
+            <div class="record_maintitle">
+              <h4 class="mb-0 card-title">01/看診資料</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pt-3 pb-3">
+                <div class="col-lg-7">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-5 col-md-12 profile_edit_text mb-992">驗配院所：</label>
+                    <div class="col-lg-7 col-md-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">大學眼科公館店</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-6 col-md-12 profile_edit_text mb-992">看診者：</label>
+                    <div class="col-lg-6 col-md-12">
+                      <label class="form-check-label font-weight-normal mb-0">林大華</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 col-md-12 profile_edit_text mb-992">檢查日期：</label>
+                    <div class="col-lg-7 col-md-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">2020/11/25</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_maintitle">
+              <h4 class="mb-0 card-title">02/檢查結果</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pt-3 pb-3">
+                <div class="col-12">
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">裸眼視力：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">近視度數：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">散光度數：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">角度：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">矯正視力：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">眼軸長：</label>
+                    <div class="col-lg-4 mb-992">
+                      <label class="form-check-label font-weight-normal">2.0(左眼)</label>
+                    </div>
+                    <div class="col-lg-4">
+                      <label class="form-check-label font-weight-normal">2.0(右眼)</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-5 profile_edit_text mb-2">本次診斷之後是否搭配長效散瞳劑使用？</label>
+                    <div class="col-lg-7">
+                      <label class="form-check-label font-weight-normal">是</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-lg-3 profile_edit_text mb-992">備註：</label>
+                    <div class="col-lg-9 mb-992">
+                      <label class="form-check-label font-weight-normal">無</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_maintitle">
+              <h4 class="mb-0 card-title">03/生活習慣</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">1.本週配戴MiSight的時間
+                  </label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">每週2次；平均每日2小時</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">2.本週是否有持續搭配長效散瞳劑使用？（如未開藥，選遵醫囑使用即可）
+                  </label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">偶爾忘記</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">3.平均每日睡眠時間？
+                  </label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">不足6小時</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">4.平均每日戶外活動時間？
+                  </label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">1-2小時</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">5.平均每日 3C 產品使用時間？</label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">從未使用過</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="form-group row align-items-center">
+                  <label class="col-12 profile_edit_text mb-992">6.本週是否有出現以下情形？（可複選）</label>
+                  <div class="col-12 mb-992">
+                    <label class="form-check-label font-weight-normal pt-2">眼睛刺痛、眼睛刺痛、眼睛發炎、暈眩</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_btn pt-4">
+              <button class="btn btn-primary font-weight-medium auth-form-btn register_btn" data-toggle="modal" data-target="#">確認</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 填寫結案報告 -->
+  <div class="modal fade" id="member_report" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content patient_profile">
+        <div class="card report_border">
+          <button type="button" class="close close_btn" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">邁視兒每日拋軟式隱形眼鏡視力矯正結案</h2>
+            <div class="record_maintitle report_maintitle">
+              <h4 class="mb-0 card-title">01/結案報告</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pb-3">
+                <div class="col-12">
+                  <p class="report_text font-weight-normal col-12">＊針對未完成計畫者，請服務人員確實填寫本表單，以利本計畫結案。<br>＊逾期1個月未完成最後一次回診即可結案。</p>
+                  <div class="form-group row record_title_size">
+                    <div class="col-lg-12">
+                      <label class="col-form-label profile_edit_text">1.(排除初診)本案共回診幾次？</label>
+                    </div>
+                    <div class="col-12">
+                      <label class="form-check-label font-weight-normal mb-0">回診次數：2次</label>
+                    </div>
+                  </div>
+                  <div class="form-group row record_title_size align-items-center">
+                    <div class="col-lg-12">
+                      <label class="col-form-label profile_edit_text">2.無法完成計畫的原因是？</label>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="negative" value="1"> 控制效果不如預期
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="negative" value="2"> 無法配合回診時間
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="negative" value="3"> 孩子戴不習慣
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="negative" value="4"> 眼睛有其它狀況
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text form-check-label label_else_text">
+                            <input type="radio" class="form-check-input" name="negative" value="5"> 其他
+                          </label>
+                        </div>
+                        <input type="text" class="form-control" name="negative_other" placeholder="請輸入其它原因">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row record_title_size align-items-center">
+                    <div class="col-lg-12">
+                      <label class="col-form-label profile_edit_text">3.後續處理方式是？</label>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="follow_up" value="1"> 角膜塑型片
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text form-check-label label_else_text">
+                            <input type="radio" class="form-check-input" name="follow_up" value="2"> 框架眼鏡
+                          </label>
+                        </div>
+                        <select class="form-control form-control-select" name="follow_up_frame">
+                          <option value="">請選擇</option>
+                          <option value="1">一般鏡片</option>
+                          <option value="2">成長樂</option>
+                          <option value="3">成長悅</option>
+                          <option value="4">Miyosmart</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="follow_up" value="3"> 退片處理
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row record_title_size">
+                    <div class="col-lg-12 mb-2">
+                      <label class="col-form-label profile_edit_text">4.補充說明：</label>
+                    </div>
+                    <div class="col-lg-12 mb-992">
+                        <textarea class="form-control" rows="8" name="remark" placeholder="請輸入補充說明"></textarea>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </div>
+            <div class="record_maintitle report_maintitle">
+              <h4 class="mb-0 card-title">02/滿意度調查</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pb-3">
+                <div class="col-12">
+                  <p class="report_text font-weight-normal col-12">＊為提供更優質的醫療服務品質與環境，懇請您利用幾分鐘時間填寫這份問卷，以提供我們改進的方向，謝謝您的合作與支持。</p>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-992">1.整體環境清潔舒適：</label>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="clean" value="1"> 很滿意
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="clean" value="2"> 可以
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text form-check-label label_else_text">
+                            <input type="radio" class="form-check-input" name="clean" value="3"> 不滿意，因為：
+                          </label>
+                        </div>
+                        <input type="text" class="form-control" name="clean_dislike" placeholder="請輸入原因">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-992">2.就醫流程順暢：</label>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="process" value="1"> 很滿意
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="process" value="2"> 可以
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text form-check-label label_else_text">
+                            <input type="radio" class="form-check-input" name="process" value="3"> 不滿意，因為：
+                          </label>
+                        </div>
+                        <input type="text" class="form-control" name="process_dislike" placeholder="請輸入原因">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-992">3.對醫師的滿意度：</label>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="doctor_satisfaction" value="1"> 很滿意
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="doctor_satisfaction" value="2"> 可以
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text form-check-label label_else_text">
+                            <input type="radio" class="form-check-input" name="doctor_satisfaction" value="3"> 不滿意，因為：
+                          </label>
+                        </div>
+                        <input type="text" class="form-control" name="doctor_satisfaction_dislike" placeholder="請輸入原因">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-992">4.對驗光人員的滿意度：</label>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="optometrist_satisfaction" value="1"> 很滿意
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="optometrist_satisfaction" value="2"> 可以
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text form-check-label label_else_text">
+                            <input type="radio" class="form-check-input" name="optometrist_satisfaction" value="3"> 不滿意，因為：
+                          </label>
+                        </div>
+                        <input type="text" class="form-control" name="optometrist_satisfaction_dislike" placeholder="請輸入原因">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-992">5.孩子對於配戴 MiSight 舒適度：</label>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="misight_comfortable" value="1"> 很滿意
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="misight_comfortable" value="2"> 可以
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text form-check-label label_else_text">
+                            <input type="radio" class="form-check-input" name="misight_comfortable" value="3"> 不滿意，因為：
+                          </label>
+                        </div>
+                        <input type="text" class="form-control" name="misight_comfortable_dislike" placeholder="請輸入原因">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-992">6.孩子對於配戴 MiSight 清晰度：</label>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="misight_clarity" value="1"> 很滿意
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="misight_clarity" value="2"> 可以
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text form-check-label label_else_text">
+                            <input type="radio" class="form-check-input" name="misight_clarity" value="3"> 不滿意，因為：
+                          </label>
+                        </div>
+                        <input type="text" class="form-control" name="misight_clarity_dislike" placeholder="請輸入原因">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-992">7.您對於本次計劃控制效果滿意度：</label>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="result_satisfaction" value="1"> 很滿意
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="result_satisfaction" value="2"> 可以
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text form-check-label label_else_text">
+                            <input type="radio" class="form-check-input" name="result_satisfaction" value="3"> 不滿意，因為：
+                          </label>
+                        </div>
+                        <input type="text" class="form-control" name="result_satisfaction_dislike" placeholder="請輸入原因">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-992">8.您覺得這個矯正方式對於孩子生活品質有幫助嗎？</label>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="helpful" value="1"> 有
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text form-check-label label_else_text">
+                            <input type="radio" class="form-check-input" name="helpful" value="2"> 沒有，因為：
+                          </label>
+                        </div>
+                        <input type="text" class="form-control" name="helpful_dislike" placeholder="請輸入原因">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-992">9.您會選擇繼續讓孩子配戴這個產品嗎？</label>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="go_on" value="1"> 會
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text form-check-label label_else_text">
+                            <input type="radio" class="form-check-input" name="go_on" value="2"> 不會，因為：
+                          </label>
+                        </div>
+                        <input type="text" class="form-control" name="go_on_dislike" placeholder="請輸入原因">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-992">10.您會推薦給親友這個矯正方式嗎？</label>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend record_title_size">
+                          <label class="form-check-label font-weight-normal">
+                            <input type="radio" name="recommend" value="1"> 會
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-1">
+                      <div class="input-group pl-3 pt-2">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text form-check-label label_else_text">
+                            <input type="radio" class="form-check-input" name="recommend" value="2"> 不會，因為：
+                          </label>
+                        </div>
+                        <input type="text" class="form-control" name="recommend_dislike" placeholder="請輸入原因">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_btn pt-4">
+              <button class="btn btn-primary font-weight-medium auth-form-btn register_btn" data-toggle="modal" data-target="#">預覽紀錄</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 確認結案報告 -->
+  <div class="modal fade" id="member_report_revise" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content patient_profile">
+        <div class="card report_border">
+          <button type="button" class="close close_btn" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">邁視兒每日拋軟式隱形眼鏡視力矯正結案</h2>
+            <div class="record_maintitle report_maintitle">
+              <h4 class="mb-0 card-title">01/結案報告</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pb-3">
+                <p class="report_text font-weight-normal col-12">＊針對未完成計畫者，請服務人員確實填寫本表單，以利本計畫結案。<br>＊逾期1個月未完成最後一次回診即可結案。</p>
+                <div class="col-12">
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">1.(排除初診)本案共回診幾次?</label>
+                    <div class="col-12">
+                      <label class="form-check-label font-weight-normal mb-0">回診次數：2次</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">2.無法完成計畫的原因是？</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">孩子戴不習慣</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">3.後續處理方式是？</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">框架眼鏡:Miyosmart</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">4.補充說明：</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">無</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_maintitle report_maintitle">
+              <h4 class="mb-0 card-title">02/滿意度調查</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pb-3">
+                <p class="report_text font-weight-normal col-12">為提供更優質的醫療服務品質與環境，懇請您利用幾分鐘時間填寫這份問卷，以提供我們改進的方向，謝謝您的合作與支持。</p>
+                <div class="col-12">
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">1.整體環境清潔舒適：</label>
+                    <div class="col-12">
+                      <label class="form-check-label font-weight-normal mb-0">很滿意</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">2.就醫流程順暢：</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">很滿意</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">3.對醫師的滿意度：</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">很滿意</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">4.對驗光人員的滿意度：</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">很滿意</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">5.孩子對於配戴 MiSight 舒適度：</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">很滿意</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">6.孩子對於配戴 MiSight 清晰度：</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">很滿意</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">7.您對於本次計劃控制效果滿意度：</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">很滿意</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">8.您覺得這個矯正方式對於孩子生活品質有幫助嗎？</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">有</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">9.您會選擇繼續讓孩子配戴這個產品嗎？</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">會</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">10.您會推薦給親友這個矯正方式嗎？</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">會</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_btn pt-4">
+              <button class="btn btn-primary font-weight-medium auth-form-btn register_btn m-1" data-toggle="modal" data-target="#">返回編輯</button>
+              <button class="btn btn-primary font-weight-medium auth-form-btn register_btn m-1" data-toggle="modal" data-target="#">確定新增</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 查看結案報告 -->
+  <div class="modal fade" id="member_report_view" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content patient_profile">
+        <div class="card report_border">
+          <button type="button" class="close close_btn" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">邁視兒每日拋軟式隱形眼鏡視力矯正結案</h2>
+            <div class="record_maintitle report_maintitle">
+              <h4 class="mb-0 card-title">01/結案報告</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pb-3">
+                <p class="report_text font-weight-normal col-12">＊針對未完成計畫者，請服務人員確實填寫本表單，以利本計畫結案。<br>＊逾期1個月未完成最後一次回診即可結案。</p>
+                <div class="col-12">
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">1.(排除初診)本案共回診幾次?</label>
+                    <div class="col-12">
+                      <label class="form-check-label font-weight-normal mb-0">回診次數：2次</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">2.無法完成計畫的原因是？</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">孩子戴不習慣</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">3.後續處理方式是？</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">框架眼鏡：Miyosmart</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">4.補充說明：</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">無</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_maintitle report_maintitle">
+              <h4 class="mb-0 card-title">02/滿意度調查</h4>
+            </div>
+            <div class="form-group align-items-center record_title_size mt-3 pl-3 pr-3">
+              <div class="row pb-3">
+                <p class="report_text font-weight-normal col-12">＊為提供更優質的醫療服務品質與環境，懇請您利用幾分鐘時間填寫這份問卷，以提供我們改進的方向，謝謝您的合作與支持。</p>
+                <div class="col-12">
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">1.整體環境清潔舒適：</label>
+                    <div class="col-12">
+                      <label class="form-check-label font-weight-normal mb-0">很滿意</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">2.就醫流程順暢：</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">很滿意</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">3.對醫師的滿意度：</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">很滿意</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">4.對驗光人員的滿意度：</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">很滿意</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">5.孩子對於配戴 MiSight 舒適度：</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">很滿意</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">6.孩子對於配戴 MiSight 清晰度：</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">很滿意</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">7.您對於本次計劃控制效果滿意度：</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">很滿意</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">8.您覺得這個矯正方式對於孩子生活品質有幫助嗎？</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">有</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">9.您會選擇繼續讓孩子配戴這個產品嗎？</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">會</label>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center">
+                    <label class="col-12 profile_edit_text mb-2">10.您會推薦給親友這個矯正方式嗎？</label>
+                    <div class="col-12 mb-992">
+                      <label class="form-check-label font-weight-normal mb-0">會</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="record_btn pt-4">
+              <button class="btn btn-primary font-weight-medium auth-form-btn register_btn" data-toggle="modal" data-target="#">確認</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 小彈窗-確認建立 -->
+  <div class="modal fade " id="build_record_check" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header align-items-center">
+          <i class="fa fa-exclamation-triangle color_orange mr-1 check_window_text"></i>
+          <h4 class="modal-title" id="build_record_check">注意</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center check_window_text">
+          資料建立後將無法再次編輯，是否要建立？
+        </div>
+        <div class="modal-footer justy-content-center">
+          <button type="button" class="btn btn_patient_profile btn_close btn-secondary letter_spacing_3" data-dismiss="modal" aria-label="Close">取消</button>
+          <button type="button" class="btn btn_patient_profile btn_records letter_spacing_3 color_fff" href="records_file_page.html">確認</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 小彈窗-是否建立結案報告 -->
+  <div class="modal fade" id="member_report_warn" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header align-items-center">
+          <i class="fa fa-exclamation-triangle color_orange mr-1"></i>
+          <h4 class="modal-title" id="member_report_warn">注意</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center check_window_text">
+          結案報告建立後將無法再新增回診紀錄，是否要建立？
+        </div>
+        <div class="modal-footer justy-content-center">
+          <button type="button" class="btn btn_patient_profile btn_close btn-secondary letter_spacing_3" data-dismiss="modal" aria-label="Close">取消</button>
+          <button type="button" class="btn btn_patient_profile btn_records letter_spacing_3 color_fff" data-toggle="modal" data-target="#">確認</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--表尾-->
+<!-- <script src="../design/js/jquery.js"></script>
+  <script src="../design/js/TweenMax.js"></script>
+  <script src="../design/js/ScrollToPlugin.js"></script>
+  <script src="../design/js/jquery.countTo.js"></script>
+  <script src="../design/js/scroll.listener.js"></script>
+  <script src="../design/js/main.js"></script>
+  <script src="js/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="js/vendor.bundle.base.js"></script>
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script> -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/moment.js"></script>
+  <script src="js/daterangepicker.js"></script>
+  <script src="js/template.js"></script>
+  <script>
+    $(function() {
+      $('input[name="birthday"]').daterangepicker({
+        singleDatePicker: true,
+        showDropdowns: true,
+        minYear: 1901,
+        maxYear: parseInt(moment().format('YYYY'),10),
+        locale: {
+          format: 'YYYY-MM-DD'
+        }
+      });
+    });
+  </script>
+</body>
+</html>

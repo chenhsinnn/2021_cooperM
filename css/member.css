@@ -1,0 +1,532 @@
+.nav-bottom .nav {
+  display: flex;
+}
+
+/*會員中心*/
+.navbar.horizontal-layout {
+  background-color: #F36117;
+}
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+  padding: 0;
+}
+.navbar.horizontal-layout .nav-bottom .page-navigation > .nav-item {
+  width: 20%;
+}
+.member_header_title a {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color:#ffffff;
+  margin-bottom: 0;
+  line-height: 1;
+}
+.navbar.horizontal-layout .navbar-brand-wrapper {
+  width: 20rem;
+}
+.navbar.horizontal-layout .navbar-menu-wrapper {
+  width: calc(100% - 20rem);
+  justify-content: flex-end;
+}
+.member_header_title span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color:#ffffff;
+}
+.member_header_box_top {
+  display: flex;
+  justify-content: space-between;
+}
+.member_header_topright_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.member_header_topright_box img {
+  border-radius: 80px;
+}
+.member_header_topright_box p {
+  color: #fff;
+  margin:0 1rem;
+  font-size: 0.9rem;
+}
+.logout_box a{
+  display: block;
+  border-radius: .2rem;
+  background-color: #fff;
+  color: #F36117;
+  padding: .2rem .8rem;
+}
+
+.nav_member {
+  /* display: -ms-flexbox; */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  justify-content: space-between;
+}
+.container_member {
+  padding:0.5rem 0 1rem 0;
+}
+.member_title {
+  color:rgb(48, 48, 48);
+  letter-spacing: .2rem;
+  font-size: .95rem;
+}
+.nav_member_box {
+  background-color: #F36117;
+}
+.nav_member_left {
+  display: flex;
+}
+.navbar.horizontal-layout .nav-bottom .page-navigation {
+  background-color: #ffd7c3;
+}
+.nav-item h5 {
+  line-height:1;
+  margin: 0 auto;
+  letter-spacing: .2rem;
+}
+.nav-link {
+  padding: 1.2rem 3.5rem 1.2rem 5rem;
+}
+.nav-link:hover {
+  background-color: #fff;
+}
+.nav-link:active {
+  background-color: #fff;
+}
+.nav-link:focus {
+  background-color: #fff;
+}
+.check_email {
+  color: #F36117;
+}
+.navbar .horizontal-layout .navbar-brand-wrapper {
+  width: 21rem;
+  height: .3rem;
+}
+
+/*服務條款*/
+.terms_title {
+  color: #F36117;
+}
+.terms_inner {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 3rem;
+}
+
+
+
+/* 首頁 */
+
+.table thead th, .table_title, .table td {
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+.member_name {
+  font-size:1.6rem;
+}
+/* .doctor::after {
+  content:'醫師';
+  color: #4d4d4d;;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: .5rem;
+} */
+.status_ok::after {
+  content:'已驗證';
+  color: #05bb51;
+  font-size: .3rem;
+  font-weight: 500;
+  text-align: center;
+  padding: .1rem  .5rem;
+  background-color: #fffae3;
+  border-radius: .15rem;
+  margin-left: .5rem;
+}
+.member_main_btn_box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.member_main_btn {
+  width: 25%;
+  margin: 0 1rem;
+}
+.member_main_btn button,
+.member_main_btn a {
+  color: #fff;
+  font-size: 1.5rem !important;
+  letter-spacing: 0.6rem;
+  background-color: #F36117;
+  border: .1rem solid #F36117;
+  border-radius: .52rem;
+  display: block;
+  width: 100%;
+  padding: 2rem 0;
+}
+.member_main_btn_2 button,
+.member_main_btn_2 a {
+  background-color: #fff;
+  color: #F36117;
+}
+.member_main_btn_sm {
+  font-size: 1rem !important;
+  letter-spacing: .2rem;
+  padding: .62rem .8rem;
+  border-radius: .2rem;
+  color: #fff;
+  background-color: #F36117;
+  display: block;
+  width: 100%;
+}
+.member_main_btn_sm:hover {
+  background-color: #fdb591;
+  color:#fff;
+}
+.color_orange {
+  color: #F36117 !important;
+}
+.member_main_btn button:hover,
+.member_main_btn a:hover {
+  background-color: #fdb591;
+  color: #fff;
+}
+.member_main_btn_sm button:hover,
+.member_main_btn_sm a:hover {
+  background-color: #fdb591;
+  color: #fff;
+}
+.member_main_btn button:active ,
+.member_main_btn a:active {
+  background-color: #fdb591;
+  color: #fff;
+}
+.member_main_btn button:focus,
+.member_main_btn a:focus {
+  background-color: #fdb591;
+  color: #fff;
+}
+.col-form-label {
+  padding-top: 0;
+}
+.navbar.horizontal-layout .nav-bottom .page-navigation > .nav-item.active > .nav-link {
+  background: #f2f2f9;
+  /* background: rgb(121, 119, 119, 0);
+  color:#F36117; */
+}
+/* 會員資料管理 */
+.list_title {
+  color: #4d4d4d;
+}
+.list_title_icon {
+  color: #4d4d4d !important;
+  font-size: 1.5rem;
+}
+.card {
+  border-radius: 5px;
+}
+.rounded-circle {
+  border: .18rem solid #F36117;
+}
+.img-xlg {
+  width: 180px;
+  height: 180px;
+}
+.btn_small {
+  font-size: .5rem !important;
+  letter-spacing: .2rem !important;
+  text-align: center;
+  padding: .3rem .6rem;
+  border-radius: 3px;
+  margin-left: 1rem;
+}
+.member-profile_info_box {
+  margin-left: 2rem;
+}
+.member_profile_image_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.member_profile_edit {
+  margin-bottom: .8rem;
+} 
+.form-group .profile_edit_text {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #4d4d4d;
+}
+.mb-576 {
+  margin-bottom: 0;
+}
+.mb-992 {
+  margin-bottom: 0;
+}
+/* 診療紀錄 */
+.th_width_sm {
+  width: 5%;
+}
+.th_width_md {
+  width: 15%;
+}
+.th_width_lg {
+  width: 30%;
+}
+.th_width_xlg {
+  width: 70%;
+}
+/* .width_130 {
+  width: 130px;
+}
+.width_120 {
+  width: 120px;
+} */
+/* .width_70 {
+  width: 70px;
+} */
+.member_record_file_btn {
+  font-size: .8rem !important;
+  letter-spacing: .2rem;
+  padding: .45rem .8rem;
+  border-radius: .2rem;
+  color: #fff;
+  background-color: #F36117;
+  /* display: block; */
+}
+.member_record_file_btn:hover {
+  background-color: #fdb591;
+  color: #fff;
+}
+/* 看診紀錄 */
+.chevron_down {
+  color: #F36117 !important ;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.chevron_down_none {
+  color: #fff;
+  font-size: 1.3rem;
+}
+/* 病患資料 */
+.patient_profile_box {
+  background-color: rgb(243, 243, 243);
+  padding: 35px 25px;
+}
+.patient_profile {
+  background-color: rgb(255, 255, 255, 0);
+  border: 0;
+  padding: 0;
+}
+.patient_profile_inner {
+  background-color: #fff;
+  padding: 0;
+}
+.patient_number {
+  background-color: #fde8dd;
+  color: #f36117;
+  border-radius: 2px;
+  padding:.5rem;
+  display: inline-block;
+  letter-spacing: .1rem;
+}
+/* .patient_profile {
+  padding-left: 0;
+} */
+.btn_patient_profile {
+  color: #fff;
+  font-size: 1rem !important;
+  letter-spacing: .2rem;
+  background-color: #F36117;
+  border: #F36117;
+  padding: .5rem .8rem;
+  border-radius: .2rem;
+}
+.status_ing::after {
+  content:'進行中';
+  color: #5f5f5f;
+  font-size: .5rem;
+  font-weight: 500;
+  text-align: center;
+  padding: .3rem;
+  background-color: #ffd7c3;
+  border-radius: .1rem;
+}
+.status_end::after {
+  content:'已結案';
+  color:#fff;
+  font-size: .5rem;
+  font-weight: 500;
+  text-align: center;
+  padding: .3rem;
+  background-color: #929292;
+  border-radius: .1rem;
+}
+.nothing::after {
+  content:'沒東西';
+  color:#fff;
+  font-size: .5rem;
+  font-weight: 500;
+  text-align: center;
+  padding: .3rem;
+  background-color: #fff;
+  border-radius: .1rem;
+}
+.patient_profile_title {
+  color: #fff;
+}
+/* icoon */
+.navbar.horizontal-layout .nav-bottom .page-navigation > .nav-item > .nav-link .link-icon {
+  color: #ff5500 !important;
+  font-size: 1.15rem;
+}
+/* .fa {
+  color: #fff;
+} */
+/* 彈出視窗 */
+.window_text_size {
+  font-size: 1.3rem;
+  letter-spacing: .1rem;
+  line-height: 1.5;
+}
+.record_border {
+  border: 3px solid #f36117;
+}
+/* 初診、病例資料 */
+.patient_profile_top {
+  background: #b3b3b3;
+  position: relative;
+  padding: 1rem 0;
+}
+.close_btn {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50px;
+  text-shadow:none;
+}
+.close {
+  color: #fff;
+}
+.close:hover {
+  color: #fff;
+}
+button.close {
+  background-color:#f36117;
+}
+.fa-times {
+  position: absolute;
+  top: 3px;
+  right: 6px;
+}
+.color_fff {
+  color: #fff;
+}
+
+
+
+@media (max-width:1200px) {
+  .profile_flex {
+    flex-direction: column;
+  }
+  .width_100 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-top: 1rem;
+  }
+  .member-profile_info_box {
+    margin-left: 0;
+  }
+  .member_main_btn {
+    width: 100%;
+    margin:0;
+  }
+  .grid-margin .card .profile_flex {
+    padding: 2rem 0;
+  }
+
+}
+
+
+@media (max-width: 991.98px) {
+  .navbar.horizontal-layout .nav-bottom .page-navigation > .nav-item {
+    display: block;
+    width: 100%;
+    border-right: none;
+    text-align: left;
+  }
+  .main-panel {
+    padding-top: 0;
+  }
+  .pt-4-992 {
+    padding-top: 1.5rem !important;
+  }
+  .mb-992 {
+    margin-bottom: .5rem !important;
+    text-align: left !important;
+  }
+
+}
+@media (max-width: 768px) {
+  .logout_box {
+    display: none;
+  }
+  .text_center_768 {
+    text-align: center !important ;
+  }
+  .text-left_to_center {
+    text-align: center !important;
+  }
+  .pt-4-768 {
+    padding-top: 1.5rem !important;
+  }
+  .pt-2-768 {
+    padding-top: .5rem !important;
+  }
+  .mb-768 {
+    margin-bottom: .5rem !important;
+    text-align: left !important;
+  }
+  .btn_small {
+    margin-left: 0;
+  }
+  .patient_profile_top {
+    padding: 2.5rem 0 1rem 0; 
+  }
+  .close_btn { 
+    top: 10px;
+    right: 20px;
+  }
+  .none_768 {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .navbar.horizontal-layout .navbar-menu-wrapper .navbar-nav {
+    display: none;
+  }
+  .navbar .container {
+    padding: 0 1rem 0 1rem;
+  }
+  .mb-576 {
+    margin-bottom: .5rem !important;
+    text-align: left !important;
+  }
+}
+@media (max-width: 400px) {
+  .text-left_to_center {
+    text-align: left !important;
+  }
+}
+@media (max-width: 360px) {
+  .mt-2-360 {
+    margin-top: .5rem !important;
+    margin-right:0;
+  }
+}
