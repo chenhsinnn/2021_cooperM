@@ -1,0 +1,309 @@
+/*地圖、諮詢點查詢*/
+.index_map {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #ffe8d0;
+}
+
+.index_map .map {
+  width: 45%;
+  background: #f46018 url(../images/map.png) center / cover no-repeat;
+}
+
+.index_map_info {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:40px 0 40px 0 ;
+}
+
+.index_map_info .m_i_lefttop {
+  margin: 0 auto;
+}
+
+.index_map_info .map_info_title {
+  width: 289px;
+  width: 87px;
+  background: url(../images/enquiry_point_query.png) center / cover no-repeat;
+}
+
+.index_map_info h2 {
+  font-size: 52px;
+  font-weight: 900;
+  color: #332826;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.index_map_info .m_i_leftmiddle {
+  width: 86%;
+  border: #7c7c7c solid 1.5px;
+  padding:20px 15px 20px 15px;
+  border-radius:20px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.index_map_info .m_i_infotext_title {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+}
+
+.index_map_info h3 {
+  width: 20%;
+  margin: 0 auto;
+  color: #5a2a17;
+  background-color: #ffe8d0;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 8px;
+  text-align: center;
+}
+
+.m_i_infotext {
+  margin: 0 auto;
+}
+.index_map_info p {
+  position: relative;
+  color: #5a2a17;
+  font-size: 17px;
+  line-height: 32px;
+  padding: 0 0 0 16px;
+}
+.index_map_info p::before {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: -7px 0 0 0;
+  background-color: #5a2a17;
+  content: '';
+}
+
+.index_map_info .btn_more {
+  position: relative;
+  display: block;
+  width: 200px;
+  margin: 3% auto 0 auto;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  color: #ffff;
+  background-color: #ff6000;
+  /* box-shadow: -8.7px 5px 20px 0 rgba(108, 42, 126, 0.2); */
+  transition: background-color 0.5s linear;
+}
+
+.index_map_info .btn_more:before {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  display: block;
+  width: 28px;
+  height: 1px;
+  margin: 3px 0 0 0;
+  background: #fff;
+  content: '';
+  transition: transform 0.5s linear;
+}
+
+.index_map_info .btn_more:after {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  display: block;
+  width: 9px;
+  height: 1px;
+  margin: 0 0 0 0;
+  background: #fff;
+  content: '';
+  transform: rotate(45deg);
+  transition: transform 0.5s linear;
+}
+
+.index_map_info .btn_more:hover {
+  background-color: #cc3d09;
+}
+
+.index_map_info .btn_more:hover:before {
+  transform: translate(5px, 0);
+}
+
+.index_map_info .btn_more:hover:after {
+  transform: translate(5px, 0) rotate(45deg);
+}
+
+@media (max-width: 1550px) {
+
+  .index_map_info .map_info_title {
+    width: 18.64516vw;
+    height: 5.612903vw;
+  }
+
+  .index_map_info h2 {
+    font-size: 3.3548vw;  
+  }
+
+  .index_map_info p {
+    font-size: 1.09677vw;
+    line-height: 2.064516vw;
+    padding: 0 0 0 1.032258vw;
+  }
+
+  .index_map_info p::before {
+    width: 0.903226vw;
+    height: 0.903226vw;
+    margin: -0.451613vw 0 0 0;
+  }
+
+  .index_map_info h3 {
+    font-size: 1.41935vw;
+    letter-spacing: 0.51613vw; 
+  }
+
+  .index_map_info .btn_more {
+    font-size: 1.16129vw;
+    letter-spacing: 0.129032vw;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .index_map {
+    display: block;
+  }
+
+  .index_map .map {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .index_map_info {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 6.510417vw 0;
+    background: rgba(244, 96, 24, 0.7);
+  }
+
+  .index_map_info .m_i_lefttop {
+    padding: 7.8125vw 0 0 0;
+  }
+
+  .index_map_info .map_info_title {
+    width: 37.630208vw;
+    height: 11.328125vw;
+    margin: 0 auto 1.5625vw auto;
+    background: url(../images/enquiry_point_query_m.png) center / cover no-repeat;
+  }
+
+  .index_map_info h2 {
+    font-size: 6.510417vw;
+    color: #fff;
+    margin: 0 0 4.557292vw 0;
+  }
+
+  .index_map_info .m_i_leftmiddle {
+    width: 91.145833vw;
+    border: #fff solid 1px;
+    border-top: none;
+    padding: 4.557292vw 1.953125vw 3.90625vw 1.953125vw;
+    border-radius: 1.953125vw;
+    margin: 0 auto;
+  }
+
+  .index_map_info h3 {
+    font-size: 2.604167vw;
+    letter-spacing: 0.390625vw;
+    color: #fff;
+    background: transparent;
+  }
+
+  .index_map_info h3:before {
+    position: absolute;
+    top: 50%;
+    left: 1.302083vw;
+    width: 37.760417vw;
+    height: 1px;
+    background-color: #fff;
+    content: '';
+    border-radius: 50% 0 0 50%;
+  }
+  
+  .index_map_info h3:after {
+    position: absolute;
+    top: 50%;
+    right: 1.302083vw;
+    width: 37.760417vw;
+    height: 1px;
+    background-color: #fff;
+    content: '';
+    border-radius: 0 50% 50% 0;
+  }
+
+  .index_map_info p {
+    font-size: 2.864583vw;
+    line-height: 4.90625vw;
+    color: #fff;
+    margin: 0 0 1.302083vw 0;
+    padding: 0 0 0 2.083333vw;
+  }
+
+  .index_map_info p::before {
+    width: 1.5625vw;
+    height: 1.5625vw;
+    background: #fff;
+    margin: -3.1vw 0 0 0;
+  }
+
+  .index_map_info .btn_more {
+    width: 26.171875vw;
+    height: 7.8125vw;
+    font-size: 3.645833vw;
+    line-height: 7.8125vw;
+    letter-spacing: 0;
+    margin: 6.510417vw auto 0 auto;
+    border-radius: 50px;
+    padding: 0;
+    color: #ff6000;
+    background: #ffff;
+  }
+
+  .index_map_info .btn_more:before {
+    right: 3.255208vw;
+    width: 3.645833vw;
+    height: 0.130208vw;
+    background: #ff6000;
+    margin: 0.130208vw 0 0 0;
+  }
+  
+  .index_map_info .btn_more:after {
+    right: 3.125vw;
+    width: 1.171875vw;
+    height: 0.130208vw;
+    background: #ff6000;
+    margin: -0.260417vw 0 0 0;
+  }
+  
+  .index_map_info .btn_more:hover {
+    background-color: #ffff;
+  }
+
+}

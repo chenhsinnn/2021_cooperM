@@ -1,0 +1,151 @@
+/* 表頭、選單 */
+
+.header {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 84px;
+  background-color:#f46018;
+	z-index:10;
+}
+
+.header .header_inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header h1 a {
+  font-size: 32px;
+  line-height: 84px;
+  font-weight: 900;
+  margin-left: 30px;
+  color:#ffffff;
+  white-space: nowrap;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  position: relative;
+  margin: 0 13px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  transition: background-color 0.3s linear;
+  list-style: none;
+}
+
+.menu li:before {
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: -13px;
+  width: 1px;
+  height: 19px;
+  background: #fff;
+  margin: -9.5px 0 0 0;
+  content: '';
+}
+
+.menu li:last-child:before {
+  content: none;
+}
+
+.menu li:hover {
+  background-color: white;
+}
+
+.menu li:hover a {
+  color:#f46018;
+  transition: color 0.3s linear;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  height: 100%;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* 表頭、選單 end */
+
+@media (max-width: 1200px) {
+  /* 表頭、選單 */
+
+  .header{
+    height: 7vw;
+  }
+
+  .header h1 a {
+    font-size: 2.666667vw;
+    line-height: 7vw;
+    margin-left: 2.5vw;
+  }
+
+  .menu li {
+    margin: 0 1.083333vw;
+    font-size: 1.333333vw;
+  }
+
+  .menu li a {
+    padding: 0.833333vw;
+  }
+  
+  .menu li:before {
+    right: -1.083333vw;
+    width: 0.083333vw;
+    height: 1.583333vw;
+    margin: -0.791667vw 0 0 0;
+  }
+
+  /* 表頭、選單 end */
+}
+
+@media (max-width: 768px) {
+
+  /* 表頭、選單 */
+
+  .header{
+    /* height: 104px; */
+    height: 13.541667vw;
+  }
+
+  .header .header_inner {
+    justify-content: flex-start;
+  }
+
+  .menu {
+    display: none;
+  }
+  
+  .header h1 {
+    /* padding: 34px 0 0 0; */
+    padding: 4.427083vw 0 0 0;
+    margin: 0 auto;
+  }
+  
+  .header h1 a {
+    /* font-size: 32px;
+    line-height: 32px;
+    margin-left: 122px; */
+    /* font-size: 4.166667vw; */
+    /* line-height: 4.166667vw; */
+    /* margin-left: 15.885417vw; */
+    /* font-size: 46px; */
+    /* line-height: 46px; */
+    font-size: 5.989583vw;
+    line-height: 5.989583vw;
+    margin-left: 0;
+  }
+
+  /* 表頭、選單 end */
+  
+}

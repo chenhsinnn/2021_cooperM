@@ -1,0 +1,252 @@
+/* 表尾-文字連結 */
+
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: #f5f5f5;
+  border-top: solid 2px #d6d6d6;
+  z-index: 5;
+}
+
+.footer .footerlink {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  width: calc(100% - 150px);
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 45px 75px 66px 75px;
+  border-bottom: solid 2px #d6d6d6;
+}
+
+.footer .footerlink .linkleft {
+  width: 300px;
+  margin: 0 30px 0 0;
+}
+
+.footer .footerlink .linkright {
+  width: 400px;
+}
+
+.footer .footerlink .footer_icon {
+  width: 324px;
+  margin-left: auto;
+}
+
+.footer .footerlink h2 {
+  color: #b26b61;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0 0 5px 0;
+}
+
+.footer .footerlink h2 span {
+  color: #2c84ae;
+  font-weight: bold;
+}
+
+.footer .footerlink ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footerlink li {
+  font-size: 16px;
+  line-height: 40px;
+  width: 50%;
+  list-style: none;
+}
+
+.footer .footerlink li a {
+  display: block;
+  color: #7c7c7c;
+}
+
+.footer .footerlink li a:hover {
+  color: #bbbbbb;
+}
+
+footer .copyright {
+  text-align: center;
+  font-size: 16px;
+  padding: 15px;
+  margin: 0;
+}
+
+/*表尾-icon連結*/
+
+.footer_icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_icon a {
+  display: block;
+  width: 51px;
+  height: 51px;
+  text-indent: -9999px;
+  margin: 0 15px;
+}
+
+.footer_icon .icon_print {
+  background: url(../images/icon_print.png) center / contain no-repeat;
+}
+
+.footer_icon .icon_mail {
+  background: url(../images/icon_mail.png) center / contain no-repeat;
+}
+
+.footer_icon .icon_facebook {
+  background: url(../images/icon_facebook.png) center / contain no-repeat;
+}
+
+.footer_icon .icon_line {
+  background: url(../images/icon_line.png) center / contain no-repeat;
+}
+
+.icon_print:hover {
+  background: url(../images/icon_fax_hover.png) center / contain no-repeat;
+}
+
+.icon_mail:hover {
+  background: url(../images/icon_mail_hover.png) center / contain no-repeat;
+}
+
+.icon_facebook:hover {
+  background: url(../images/icon_fb_hover.png) center / contain no-repeat;
+}
+
+.icon_line:hover {
+  background: url(../images/icon_line_hover.png) center / contain no-repeat;
+}
+/* 表尾-文字連結 end */
+
+@media (max-width: 1200px) {
+  /* 表尾-文字連結 */
+
+  .footer .footerlink {
+    flex-wrap: wrap;
+    padding: 45px 75px 0 75px;
+  }
+
+  .footer .footerlink:before {
+    position: absolute;
+    display: block;
+    bottom: 156px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #d6d6d6;
+    content: '';
+  }
+
+  .footer .footerlink .linkleft {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 46px 0;
+  }
+
+  .footer .footerlink .linkright {
+    width: 100%;
+    padding: 0 0 55px 0;
+  }
+
+  .footer .footerlink .footer_icon {
+    width: 100%;
+    margin: 0;
+    padding: 27px 0 30px 0;
+  }
+
+  .footer .footerlink .linkleft li {
+    width: calc(100% / 5);
+  }
+
+  .footer .footerlink .linkright li {
+    width: calc(100% / 3);
+  }
+
+  /*表尾-icon連結*/
+}
+
+@media (max-width: 768px) {
+  /* 表尾-文字連結 */
+
+  .footer .footerlink {
+    /* width: calc(100% - 86px);
+    padding: 38px 43px 0 43px; */
+    width: calc(100% - 11.197917vw);
+    padding: 4.947917vw 5.598958vw 0 5.598958vw;
+  }
+
+  .footer .footerlink:before {
+    bottom: 26.953125vw;
+  }
+
+  .footer .footerlink .linkleft {
+    padding: 0 0 2.083333vw 0;
+  }
+
+  .footer .footerlink .linkright {
+    padding: 0 0 3.255208vw 0;
+  }
+
+  .footer .footerlink .footer_icon {
+    padding: 3.515625vw 0 3.90625vw 0;
+  }
+
+  .footer .footerlink h2 {
+    font-size: 2.864583vw;
+    line-height: 3.90625vw;
+    margin: 0 0 2.604167vw 0;
+  }
+
+  .footer .footerlink li {
+    font-size: 2.864583vw;
+    line-height: 3.90625vw;
+  }
+
+  .footer .footerlink .linkleft li {
+    width: auto;
+    margin: 0 5.989583vw 3.90625vw 0;
+  }
+
+  .footer .footerlink .linkright li {
+    width: auto;
+    margin: 0 3.90625vw 3.90625vw 0;
+  }
+
+  footer .copyright {
+    font-size: 2.083333vw;
+    padding: 2.604167vw 0 1.953125vw 0;
+  }
+
+  /*表尾-icon連結*/
+
+  .footer_icon a {
+    width: 12.760417vw;
+    height: 12.760417vw;
+    margin: 0 4.166667vw;
+  }
+
+  .footer_icon .icon_print {
+    background: url(../images/m/icon_print.png) center / contain no-repeat;
+  }
+
+  .footer_icon .icon_mail {
+    background: url(../images/m/icon_mail.png) center / contain no-repeat;
+  }
+
+  .footer_icon .icon_facebook {
+    background: url(../images/m/icon_facebook.png) center / contain no-repeat;
+  }
+
+  .footer_icon .icon_line {
+    background: url(../images/m/icon_line.png) center / contain no-repeat;
+  }
+
+  /* 表尾-文字連結 end */
+}

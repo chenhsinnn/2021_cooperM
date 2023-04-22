@@ -1,0 +1,892 @@
+/*台灣進士狂潮來臨*/
+.content{
+  position: relative;
+  width: 100%;
+  background-color: #f5f5f5;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.content .content_inner {
+  position: relative;
+  width: calc(100% - 100px);
+  max-width: 1200px;
+  padding: 120px 50px 275px 50px;
+  margin: 0 auto;
+}
+
+.content .content_info {
+  padding: 0 100px 0 100px;
+}
+
+.content h2 {
+  color: #ea9431;
+  margin-bottom: 45px;
+  letter-spacing: 5px;
+  font-size: 22px;
+}
+
+.content h3 {
+  color:#ed6c00;
+  font-size: 100px;
+  margin-bottom: 35px;
+  font-weight: bolder;
+  letter-spacing: 10px;
+}
+
+.content .line{
+  border-bottom: #7c7c7c dashed 2px;
+  width: 305px;
+  margin-bottom: 40px;
+}
+
+.content p {
+  color:#7c7c7c;
+  line-height: 28px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.content .content_wave {
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+}
+
+/*跑動數字*/
+.numbergroup {
+  margin:0 auto;
+  margin-top: 148px;
+  /* width:45%; */
+  display:flex;
+  justify-content: center;
+}
+.number {
+  letter-spacing: 2px;
+  font-size: 145px;
+  color:#e8380f;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 900;
+}
+
+.number span{
+  font-size: 30px;
+}
+
+/*台灣進士狂潮來臨-眼鏡插圖*/
+.img_eye_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1920px;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.img_eye {
+  position: absolute;
+}
+
+.img_eye .layer {
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.layer_box {
+  width: 100%;
+  height: 100%;
+}
+
+.img_eye_l_1 {
+  top: 50px;
+  left: 40px;
+  width: 149px;
+  height: 101px;
+  background: url(../images/eye-l-1.png) center / contain no-repeat;
+}
+.img_eye_l_1 .left_eye {
+  top: 33px;
+  left: 22px;
+  width: 15px;
+  height: 15px;
+}
+.img_eye_l_1 .left_eye .layer {
+  background-color: #ea9431;
+}
+.img_eye_l_1 .right_eye {
+  top: 51px;
+  left: 96px;
+  width: 15px;
+  height: 15px;
+}
+.img_eye_l_1 .right_eye .layer {
+  background-color: #ea9431;
+}
+.img_eye_l_2{
+  top: 220px;
+  left: 245px;
+  width: 87px;
+  height: 49px;
+  background: url(../images/eye-l-2.png) center / contain no-repeat;
+}
+.img_eye_l_2 .left_eye {
+  top: 23px;
+  left: 15px;
+  width: 10px;
+  height: 10px;
+}
+.img_eye_l_2 .left_eye .layer {
+  background-color: #ea9431;
+}
+.img_eye_l_2 .right_eye {
+  top: 23px;
+  left: 60px;
+  width: 10px;
+  height: 10px;
+}
+.img_eye_l_2 .right_eye .layer {
+  background-color: #ea9431;
+}
+.img_eye_l_3{
+  top: 325px;
+  left: 70px;
+  width: 162px;
+  height: 110px;
+  background: url(../images/eye-l-3.png) center / contain no-repeat;
+}
+.img_eye_l_3 .left_eye {
+  top: 32px;
+  left: 41px;
+  width: 17px;
+  height: 17px;
+}
+.img_eye_l_3 .left_eye .layer {
+  background-color: #ad611e;
+}
+.img_eye_l_3 .right_eye {
+  top: 48px;
+  left: 126px;
+  width: 17px;
+  height: 17px;
+}
+.img_eye_l_3 .right_eye .layer {
+  background-color: #ad611e;
+}
+.img_eye_l_4{
+  top: 570px;
+  left:60px;
+  width: 177px;
+  height: 101px;
+  background: url(../images/eye-l-4.png) center / contain no-repeat;
+}
+.img_eye_l_4 .left_eye {
+  top: 51px;
+  left: 57px;
+  width: 17px;
+  height: 17px;
+}
+.img_eye_l_4 .left_eye .layer {
+  background-color: #ceb096;
+}
+.img_eye_l_4 .right_eye {
+  top: 43px;
+  left: 108px;
+  width: 17px;
+  height: 17px;
+}
+.img_eye_l_4 .right_eye .layer {
+  background-color: #ceb096;
+}
+.img_eye_l_5{
+  top: 750px;
+  left: 260px;
+  width: 86px;
+  height: 50px;
+  background: url(../images/eye-l-5.png) center / contain no-repeat;
+}
+.img_eye_l_5 .left_eye {
+  top: 25px;
+  left: 7px;
+  width: 10px;
+  height: 10px;
+}
+.img_eye_l_5 .left_eye .layer {
+  background-color: #ea9431;
+}
+.img_eye_l_5 .right_eye {
+  top: 25px;
+  left: 50px;
+  width: 10px;
+  height: 10px;
+}
+.img_eye_l_5 .right_eye .layer {
+  background-color: #ea9431;
+}
+.img_eye_m_1{
+  top: 775px;
+  left: 680px;
+  width: 128px;
+  height: 71px;
+  background: url(../images/eye-m-1.png) center / contain no-repeat;
+}
+.img_eye_m_1 .left_eye {
+  top: 35px;
+  left: 22px;
+  width: 13px;
+  height: 13px;
+}
+.img_eye_m_1 .left_eye .layer {
+  background-color: #ea9431;
+}
+.img_eye_m_1 .right_eye {
+  top: 35px;
+  left: 90px;
+  width: 13px;
+  height: 13px;
+}
+.img_eye_m_1 .right_eye .layer {
+  background-color: #ea9431;
+}
+.img_eye_m_2{
+  top: 730px;
+  left: 1144px;
+  width: 181px;
+  height: 97px;
+  background: url(../images/eye-m-2.png) center / contain no-repeat;
+}
+.img_eye_m_2 .left_eye {
+  top: 50px;
+  left: 60px;
+  width: 17px;
+  height: 17px;
+}
+.img_eye_m_2 .left_eye .layer {
+  background-color: #ceb096;
+}
+.img_eye_m_2 .right_eye {
+  top: 40px;
+  left: 110px;
+  width: 17px;
+  height: 17px;
+}
+.img_eye_m_2 .right_eye .layer {
+  background-color: #ceb096;
+}
+.img_eye_r_1{
+  top: 75px;
+  left: 1195px;
+  width: 87px;
+  height: 41px;
+  background: url(../images/eye-r-1.png) center / contain no-repeat;
+}
+.img_eye_r_1 .left_eye {
+  top: 24px;
+  left: 14px;
+  width: 10px;
+  height: 10px;
+}
+.img_eye_r_1 .left_eye .layer {
+  background-color: #ea9431;
+}
+.img_eye_r_1 .right_eye {
+  top: 24px;
+  left: 59px;
+  width: 10px;
+  height: 10px;
+}
+.img_eye_r_1 .right_eye .layer {
+  background-color: #ea9431;
+}
+.img_eye_r_2{
+  top:95px;
+  left: 1720px;
+  width: 131px;
+  height: 92px;
+  background: url(../images/eye-r-2.png) center / contain no-repeat;
+}
+.img_eye_r_2 .left_eye {
+  top: 34px;
+  left: 25px;
+  width: 15px;
+  height: 15px;
+}
+.img_eye_r_2 .left_eye  .layer {
+  background-color: #ea9431;
+}
+.img_eye_r_2 .right_eye {
+  top: 57px;
+  left: 86px;
+  width: 15px;
+  height: 15px;
+}
+.img_eye_r_2 .right_eye .layer {
+  background-color: #ea9431;
+}
+.img_eye_r_3{
+  top: 160px;
+  left: 1370px;
+  width: 228px;
+  height: 132px;
+  background: url(../images/eye-r-3.png) center / contain no-repeat;
+}
+.img_eye_r_3 .left_eye {
+  top: 68px;
+  left: 15px;
+  width: 25px;
+  height: 25px;
+}
+.img_eye_r_3 .left_eye .layer {
+  background-color: #ad611e;
+}
+.img_eye_r_3 .right_eye {
+  top: 68px;
+  left: 135px;
+  width: 25px;
+  height: 25px;
+}
+.img_eye_r_3 .right_eye .layer {
+  background-color: #ad611e;
+}
+.img_eye_r_4{
+  top: 430px;
+  left: 1630px;
+  width: 183px;
+  height: 102px;
+  background: url(../images/eye-r-4.png) center / contain no-repeat;
+}
+.img_eye_r_4 .left_eye {
+  top: 50px;
+  left: 60px;
+  width: 17px;
+  height: 17px;
+}
+.img_eye_r_4 .left_eye .layer {
+  background-color: #ceb096;
+}
+.img_eye_r_4 .right_eye {
+  top: 42px;
+  left: 116px;
+  width: 17px;
+  height: 17px;
+}
+.img_eye_r_4 .right_eye .layer {
+  background-color: #ceb096;
+}
+.img_eye_r_5{
+  top: 700px;
+  left: 1570px;
+  width: 87px;
+  height: 42px;
+  background: url(../images/eye-r-5.png) center / contain no-repeat;
+}
+.img_eye_r_5 .left_eye {
+  top: 25px;
+  left: 15px;
+  width: 10px;
+  height: 10px;
+}
+.img_eye_r_5 .left_eye .layer {
+  background-color: #ea9431;
+}
+.img_eye_r_5 .right_eye {
+  top: 25px;
+  left: 60px;
+  width: 10px;
+  height: 10px;
+}
+.img_eye_r_5 .right_eye .layer {
+  background-color: #ea9431;
+}
+.img_eye_r_6{
+  top: 685px;
+  left:1735px;
+  width: 237px;
+  height: 138px;
+  background: url(../images/eye-r-6.png) center / contain no-repeat;
+}
+.img_eye_r_6 .left_eye {
+  top: 66px;
+  left: 16px;
+  width: 25px;
+  height: 25px;
+}
+.img_eye_r_6 .left_eye .layer {
+  background-color: #ad611e;
+}
+.img_eye_r_6 .right_eye {
+  top: 66px;
+  left: 138px;
+  width: 25px;
+  height: 25px;
+}
+.img_eye_r_6 .right_eye .layer {
+  background-color: #ad611e;
+}
+
+@media (max-width: 1520px){
+  /*台灣進士狂潮來臨-眼鏡插圖*/
+  .img_eye_box {
+    width: 126.315789vw;
+  }
+  .img_eye_l_1{
+    top: 3.289474vw;
+    left: 2.631579vw;
+    width: 9.802632vw;
+    height: 6.644737vw;
+  }
+  .img_eye_l_1 .left_eye{
+    top:2.105263vw;
+    left:1.447368vw;
+    width:0.986842vw;
+    height:0.986842vw;
+  }
+  .img_eye_l_1 .right_eye{
+    top:3.355263vw;
+    left:6.315789vw;
+    width:0.986842vw;
+    height:0.986842vw;
+  }
+  .img_eye_l_2{
+    top: 14.473684vw;
+    left: 16.118421vw;
+    width: 5.723684vw;
+    height: 3.223684vw;
+  }
+  .img_eye_l_2 .left_eye{
+    top:1.513158vw;
+    left:0.986842vw;
+    width:0.657895vw;
+    height:0.657895vw;
+  }
+  .img_eye_l_2 .right_eye{
+    top:1.513158vw;
+    left:3.947368vw;
+    width:0.657895vw;
+    height:0.657895vw;
+  }
+  .img_eye_l_3{
+    top: 21.381579vw;
+    left: 4.605263vw;
+    width: 10.657895vw;
+    height: 7.236842vw;
+  }
+  .img_eye_l_3 .left_eye{
+    top:2.105263vw;
+    left:2.697368vw;
+    width:1.118421vw;
+    height:1.118421vw;
+  }
+  .img_eye_l_3 .right_eye{
+    top:3.157895vw;
+    left:8.289474vw;
+    width:1.118421vw;
+    height:1.118421vw;
+  }
+  .img_eye_l_4{
+    top: 37.5vw;
+    left: 3.947368vw;
+    width: 11.644737vw;
+    height: 6.644737vw;
+  }
+  .img_eye_l_4 .left_eye{
+    top:3.355263vw;
+    left:3.75vw;
+    width:1.118421vw;
+    height:1.118421vw;
+  }
+  .img_eye_l_4 .right_eye{
+    top:2.828947vw;
+    left:7.105263vw;
+    width:1.118421vw;
+    height:1.118421vw;
+  }
+  .img_eye_l_5{
+    top: 49.342105vw;
+    left: 17.105263vw;
+    width: 5.657895vw;
+    height: 3.289474vw;
+  }
+  .img_eye_l_5 .left_eye{
+    top:1.644737vw;
+    left:0.460526vw;
+    width:0.657895vw;
+    height:0.657895vw;
+  }
+  .img_eye_l_5 .right_eye{
+    top:1.644737vw;
+    left:3.289474vw;
+    width:0.657895vw;
+    height:0.657895vw;
+  }
+
+
+  .img_eye_m_1 {
+    top:50.986842vw;
+    left:44.736842vw;
+    width:8.421053vw;
+    height:4.671053vw;
+  }
+  .img_eye_m_1 .left_eye {
+    top:2.302632vw;
+    left:1.447368vw;
+    width:0.855263vw;
+    height:0.855263vw;
+  }
+  .img_eye_m_1 .right_eye {
+    top:2.302632vw;
+    left:5.921053vw;
+    width:0.855263vw;
+    height:0.855263vw;
+  }
+  .img_eye_m_2 {
+    top:48.026316vw;
+    left:75.263158vw;
+    width:11.907895vw;
+    height:6.381579vw;
+  }
+  .img_eye_m_2 .left_eye {
+    top:3.289474vw;
+    left:3.947368vw;
+    width:1.118421vw;
+    height:1.118421vw;
+  }
+  .img_eye_m_2 .right_eye {
+    top:2.631579vw;
+    left:7.236842vw;
+    width:1.118421vw;
+    height:1.118421vw;
+  }
+  .img_eye_r_1 {
+    top:4.934211vw;
+    left:78.618421vw;
+    width:5.723684vw;
+    height:2.697368vw;
+  }
+  .img_eye_r_1 .left_eye {
+    top:1.578947vw;
+    left:0.921053vw;
+    width:0.657895vw;
+    height:0.657895vw;
+  }
+  .img_eye_r_1 .right_eye {
+    top:1.578947vw;
+    left:3.289474vw;
+    width:0.657895vw;
+    height:0.657895vw;
+  }
+  .img_eye_r_2 {
+    top:6.25vw;
+    left:113.157895vw;
+    width:8.618421vw;
+    height:6.052632vw;
+  }
+  .img_eye_r_2 .left_eye {
+    top:2.236842vw;
+    left:1.644737vw;
+    width:0.986842vw;
+    height:0.986842vw;
+  }
+  .img_eye_r_2 .right_eye {
+    top:3.75vw;
+    left:5.657895vw;
+    width:0.986842vw;
+    height:0.986842vw;
+  }
+  .img_eye_r_3 {
+    top:10.526316vw;
+    left:90.131579vw;
+    width:15vw;
+    height:8.684211vw;
+  }
+  .img_eye_r_3 .left_eye {
+    top:4.473684vw;
+    left:0.986842vw;
+    width:1.644737vw;
+    height:1.644737vw;
+  }
+  .img_eye_r_3 .right_eye {
+    top:4.473684vw;
+    left:8.881579vw;
+    width:1.644737vw;
+    height:1.644737vw;
+  }
+  .img_eye_r_4 {
+    top:28.289474vw;
+    left:107.236842vw;
+    width:12.039474vw;
+    height:6.710526vw;
+  }
+  .img_eye_r_4 .left_eye {
+    top:3.289474vw;
+    left:3.947368vw;
+    width:1.118421vw;
+    height:1.118421vw;
+  }
+  .img_eye_r_4 .right_eye {
+    top:2.763158vw;
+    left:7.631579vw;
+    width:1.118421vw;
+    height:1.118421vw;
+  }
+  .img_eye_r_5 {
+    top:46.052632vw;
+    left:103.289474vw;
+    width:5.723684vw;
+    height:2.763158vw;
+  }
+  .img_eye_r_5 .left_eye {
+    top:1.644737vw;
+    left:0.986842vw;
+    width:0.657895vw;
+    height:0.657895vw;
+  }
+  .img_eye_r_5 .right_eye {
+    top:1.644737vw;
+    left:3.947368vw;
+    width:0.657895vw;
+    height:0.657895vw;
+  }
+  .img_eye_r_6 {
+    top:45.065789vw;
+    left:114.144737vw;
+    width:15.592105vw;
+    height:9.078947vw;
+  }
+  .img_eye_r_6 .left_eye {
+    top:4.342105vw;
+    left:1.052632vw;
+    width:1.644737vw;
+    height:1.644737vw;
+  }
+  .img_eye_r_6 .right_eye {
+    top:4.342105vw;
+    left:9.078947vw;
+    width:1.644737vw;
+    height:1.644737vw;
+  }
+}
+
+@media (max-width: 1400px) {
+
+  .content .content_inner {
+    width: calc(100% - 7.142857143vw);
+    padding: 8.571428571vw 3.571428571vw 19.64285714vw 3.571428571vw;
+  }
+  
+  .content .content_info {
+    padding: 0 7.142857143vw 0 7.142857143vw;
+  }
+  
+  .maintitle {
+    width: calc(100% - 7.142857143vw);
+    padding: 0 3.571428571vw;
+    margin-top: 3.571428571vw;
+  }
+  
+  .line{
+    width: 21.7857143vw;
+    margin-bottom: 2.857142857vw;
+  }
+  
+  .content h2 {
+    margin-bottom: 3.214285714vw;
+    letter-spacing: 0.3571428571vw;
+    font-size: 1.57142857vw;
+  }
+  
+  .content h3 {
+    font-size: 7.14285714vw;
+    margin-bottom: 2.5vw;
+    letter-spacing: 0.7142857143vw;
+  }
+  
+  .content p {
+    color:#7c7c7c;
+    line-height: 2vw;
+    font-size: 1.285714286vw;
+    letter-spacing: 0.1428571429vw;
+  }
+  
+  /*跑動數字*/
+  .numbergroup {
+    margin-top: 10.57142857vw;
+  }
+
+  .number{
+    letter-spacing: 0.1428571429vw;
+    /* 145px / 1400 * 100 */
+    font-size: 10.3571429vw;
+  }
+
+}
+
+@media (max-width: 768px) {
+  
+  .content .content_inner {
+    width: calc(100% - 23.4375vw);
+    padding: 13.020833vw 11.71875vw 58.59375vw 11.71875vw;
+  }
+  
+  .content .content_info {
+    padding: 0;
+  }
+
+  .content h2 {
+    color: #ea9431;
+    margin-bottom: 2.604167vw;
+    letter-spacing: 2px;
+    font-size: 3.125vw;
+    text-align: center;
+  }
+  
+  .content h3 {
+    /* font-size: 60px; */
+    /* line-height: 60px; */
+    margin-bottom: 5.208333vw;
+    letter-spacing: 1.041667vw;
+    font-size: 7.8125vw;
+    line-height: 7.8125vw;
+    text-align: center;
+  }
+
+  .content .line{
+    display: none;
+  }
+
+  .content p {
+    color:#808080;
+    /* font-size: 29px; */
+    /* line-height: 47px; */
+    font-size: 3.776042vw;
+    line-height: 6.119792vw;
+    letter-spacing: 0.260417vw;
+  }
+  
+  .content .content_wave {
+    position: absolute;
+    left: 0;
+    bottom: -0.860833vw;
+    width: 100%;
+  }
+
+  .numbergroup {
+    margin-top: 10.416667vw;
+  }
+
+  .img_eye_box {
+    width: 100%;
+  }
+
+  .img_eye {
+    display: none;
+  }
+  
+  .img_eye_l_1 {
+    top: 84.635417vw;
+    left: 9.114583vw;
+    width: 19.401042vw;
+    height: 13.151042vw;
+    display: block;
+  }
+  .img_eye_l_1 .left_eye {
+    top: 4.166667vw;
+    left: 2.864583vw;
+    width: 1.953125vw;
+    height: 1.953125vw;
+    display: block;
+  }
+  .img_eye_l_1 .right_eye {
+    top: 6.640625vw;
+    left: 12.5vw;
+    width: 1.953125vw;
+    height: 1.953125vw;
+    display: block;
+  }
+  .img_eye_l_2{
+    top: 110.677083vw;
+    left: 61.197917vw;
+    width: 11.328125vw;
+    height: 6.380208vw;
+    display: block;
+  }
+  .img_eye_l_2 .left_eye {
+    top: 2.994792vw;
+    left: 1.953125vw;
+    width: 1.302083vw;
+    height: 1.302083vw;
+    display: block;
+  }
+  .img_eye_l_2 .right_eye {
+    top: 2.994792vw;
+    left: 7.8125vw;
+    width: 1.302083vw;
+    height: 1.302083vw;
+    display: block;
+  }
+  .img_eye_l_3{
+    top: 84.635417vw;
+    left: 69.010417vw;
+    width: 21.09375vw;
+    height: 14.322917vw;
+    display: block;
+  }
+  .img_eye_l_3 .left_eye {
+    top: 4.166667vw;
+    left: 5.338542vw;
+    width: 2.213542vw;
+    height: 2.213542vw;
+    display: block;
+  }
+  .img_eye_l_3 .right_eye {
+    top: 6.25vw;
+    left: 16.40625vw;
+    width: 2.213542vw;
+    height: 2.213542vw;
+    display: block;
+  }
+  .img_eye_l_4 {
+    top: 87.239583vw;
+    left: 36.458333vw;
+    width: 23.046875vw;
+    height: 13.151042vw;
+    display: block;
+  }
+  .img_eye_l_4 .left_eye {
+    top: 6.640625vw;
+    left: 7.421875vw;
+    width: 2.213542vw;
+    height: 2.213542vw;
+    display: block;
+  }
+  .img_eye_l_4 .right_eye {
+    top: 5.598958vw;
+    left: 14.0625vw;
+    width: 2.213542vw;
+    height: 2.213542vw;
+    display: block;
+  }
+  .img_eye_l_5{
+    top: 111.328125vw;
+    left: 26.041667vw;
+    width: 11.197917vw;
+    height: 6.510417vw;
+    display: block;
+  }
+  .img_eye_l_5 .left_eye {
+    top: 3.255208vw;
+    left: 0.911458vw;
+    width: 1.302083vw;
+    height: 1.302083vw;
+    display: block;
+  }
+  .img_eye_l_5 .right_eye {
+    top: 3.255208vw;
+    left: 6.510417vw;
+    width: 1.302083vw;
+    height: 1.302083vw;
+    display: block;
+  }
+
+}
